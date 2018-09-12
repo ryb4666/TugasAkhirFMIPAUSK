@@ -1,0 +1,12 @@
+% Encoding: UTF-8
+
+@Manual{abduh2016,
+  title        = {Mesin Ekonomi Kota},
+  author       = {Muhammad Yamin Abduh},
+  organization = {Serambi Indonesia.},
+  year         = {2016},
+  timestamp    = {2017-12-15},
+  url          = {http://aceh.tribunnews.com/2016/06/01/mesin-ekonomi-kota},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
