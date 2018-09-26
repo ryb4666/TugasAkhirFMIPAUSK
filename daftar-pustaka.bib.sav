@@ -1,0 +1,412 @@
+% Encoding: UTF-8
+
+@Manual{abduh2016,
+  title        = {Mesin Ekonomi Kota},
+  author       = {Muhammad Yamin Abduh},
+  organization = {\textit{Serambi Indonesia}},
+  year         = {2016},
+  howpublished = {http://aceh.tribunnews.com/2016/06/01/mesin-ekonomi-kota},
+  timestamp    = {2017-12-15},
+}
+
+@Book{acharya2014,
+  title     = {Mastering Unit Testing Using Mockito and Junit},
+  publisher = {Packt Publishing},
+  year      = {2014},
+  author    = {Acharya, Sujoy},
+  address   = {UK},
+}
+
+@Book{aktas2017,
+	title     = {The Evolution and Emergence of QR Code},
+	publisher = {Cambridge Scholars Publishing},
+	year      = {2017},
+	author    = {Celalettin Akt\c{a}s},
+	address   = {UK},
+}
+
+@Book{bagui2012,
+	title     = {Database Design Using Entity-Relationship Diagrams Second Edition},
+	publisher = {CRC Press},
+	year      = {2012},
+	author    = {Sikha Bagui and Richard Earp},
+	address   = {USA},
+}
+
+@inproceedings{alebrahim2014,
+	year = {2014},
+	title = {Problem-Based Requirements Interaction Analysis},
+	booktitle = {Proceedings of the International Working Conference onRequirements Engineering: Foundation for Software Quality ({REFSQ})},
+	author = {Azadeh Alebrahim and Stephan Fa{\ss}bender and Maritta Heisel and Rene Meis},
+	publisher = {Springer},
+	series = {LNCS 8396},
+	pages = {200--215}
+}
+
+@inproceedings{mumbaikar2013,
+	year = {2013},
+	title = {Web Services Based On SOAP and REST Principles},
+	author = {Snehal Mumbaikar and Puja Padiya},
+	publisher = {International Journal of Scientific and Research Publications},
+	volume = {3},
+	series = {5}
+}
+
+@INPROCEEDINGS{soler2010, 
+	author={J. Soler and I. Boada and F. Prados and J. Poch and R. Fabregat}, 
+	booktitle={IEEE EDUCON 2010 Conference}, 
+	title={A web-based e-learning tool for UML class diagrams}, 
+	year={2010},
+	pages={973-979}, 
+	doi={10.1109/EDUCON.2010.5492473}, 
+	ISSN={2165-9559}, 
+	month={April}
+}
+
+@article{cabot2014,
+	title = "On the Verification of UML/OCL Class Diagrams Using Constraint Programming",
+	journal = "Journal of Systems and Software",
+	volume = "93",
+	pages = "1 - 23",
+	year = "2014",
+	issn = "0164-1212",
+	doi = "https://doi.org/10.1016/j.jss.2014.03.023",
+	url = "http://www.sciencedirect.com/science/article/pii/S0164121214000739",
+	author = "J. Cabot and R. Clarisó and D. Riera"
+}
+
+@inproceedings{balaban2016,
+	title={A Comparison of Textual Modeling Languages: OCL, Alloy, FOML},
+	author={Mira Balaban and Phillipa Bennett and Khanh-Hoang Doan and Geri Georg and Martin Gogolla and Igal Khitron and Michael Kifer},
+	booktitle={OCL@MoDELS},
+	year={2016}
+}
+
+@Misc{ambler2018,
+  author       = {Ambler, Scott W},
+  title        = {UML 2 Class Diagram: An Agile Introduction},
+  howpublished = {http://www.agilemodeling.com/artifacts/classDiagram.htm},
+  year         = {2018},
+  note         = {Diakses pada tanggal 15 Januari 2018},
+  url          = {http://www.agilemodeling.com/artifacts/classDiagram.htm},
+}
+
+@Misc{android2017,
+	author       = {Android, Developer},
+	title        = {Android Architecture Components},
+	howpublished = {https://developer.android.com/topic/libraries/architecture/index.html},
+	year         = {2017},
+	note         = {Diakses pada tanggal 20 Desember 2017},
+	url          = {https://developer.android.com/topic/libraries/architecture/index.html},
+}
+
+@Book{bappeda2016,
+	title     = {\textit{Statistik Banda Aceh 2016}},
+	publisher = {BAPPEDA Kota Banda Aceh},
+	year      = {2016},
+	author    = {BAPPEDA},
+	address   = {Kota Banda Aceh},
+}
+
+
+@Book{bappeda2017,
+	title     = {\textit{Statistik Banda Aceh 2017}},
+	publisher = {BAPPEDA Kota Banda Aceh},
+	year      = {2017},
+	author    = {BAPPEDA},
+	address   = {Kota Banda Aceh},
+}
+
+@inproceedings{beckers2014,
+	year = {2014},
+	title = {A Problem-based Approach for Computer Aided Privacy Threat Identification},
+	booktitle = {Annual Privacy Forum 2012},
+	author = {Kristian Beckers and Stephan Fa{\ss}bender and Maritta Heisel and Rene Meis},
+	publisher = {Springer},
+	volume = {8319},
+	series = {LNCS},
+	pages = {1--16},
+}
+
+@Book{brook1996,
+	title     = {SUS - A quick and dirty usability scale},
+	publisher = {Redhatch Consulting Ltd},
+	year      = {1996},
+	author    = {Jhon Brooke},
+	address   = {United Kingdom},
+}
+
+@Book{sauro2011,
+	title     = {A Practical Guide to the System Usability Scale: Background, Benchmarks, and Best Practices},
+	publisher = {Measuring Usability LLC},
+	year      = {2011},
+	author    = {J. Sauro},
+	address   = {Denver, CO},
+}
+
+@Book{knott2015,
+	title     = {The First Complete Guide to Mobile App Testing and Quality Assurance: Start-to-Finish Testing Solutions for Both Android and iOS},
+	publisher = {Pearson Education, Inc},
+	year      = {2015},
+	author    = {Daniel Knott},
+	address   = {USA},
+}
+
+@Book{blundell2015,
+	title     = {Learning Android Application Testing},
+	publisher = {Packt Publishing},
+	year      = {2015},
+	author    = {Paul Blundell and Diego Torres Milano},
+	address   = {UK},
+}
+
+@inproceedings{bangor2009,
+	year = {2009},
+	title = {Determining What Individual SUS Scores Mean: Adding an Adjective Rating Scale},
+	booktitle = {Journal of Usability Studies},
+	author = {A. Bangor and P.T. Kortum and J.T. Miller},
+	volume = {4},
+	series = {3},
+	pages = {114--123},
+}
+
+@inproceedings{dadi2016,
+	year = {2016},
+	title = {Jurnal Computech dan Bisnis},
+	booktitle = {Aplikasi Sistem Informasi Pencarian Tempat Kos di Kota Bandung Berbasis Android},
+	author = {Dadi Rosadi and Faby Oktarista Andriawan},
+	volume = {10},
+	series = {1},
+	pages = {50--58},
+}
+
+@inbook{thomas2002,
+author = {Ostrand, Thomas},
+publisher = {American Cancer Society},
+isbn = {9780471028956},
+title = {Black-Box Testing},
+booktitle = {Encyclopedia of Software Engineering},
+chapter = {},
+pages = {},
+doi = {10.1002/0471028959.sof022},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/0471028959.sof022},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/0471028959.sof022},
+year = {2002},
+}
+
+@Book{Blundell2015,
+  title     = {Learning Android Application Testing},
+  publisher = {Packt Publishing},
+  year      = {2015},
+  author    = {Paul Blundell and D.T. Dan Milano},
+  address   = {UK},
+}
+
+@Book{hanif2013,
+	title     = {Pencarian Tempat Kos dengan Teknologi \textit{Augmented Reality} Berbasis Smartphone Android},
+	publisher = {Universitas Islam Negeri Sunan Kalijaga},
+	year      = {2013},
+	author    = {Akhmad Hanif},
+	address   = {Yogyakarta},
+}
+
+@inproceedings{cheng2007, 
+	author={B. H. C. Cheng and J. M. Atlee}, 
+	booktitle={Future of Software Engineering, 2007. FOSE '07}, 
+	title={Research Directions in Requirements Engineering}, 
+	year={2007}, 
+	volume={}, 
+	number={}, 
+	pages={285-303}, 
+	keywords={formal specification;analysis task;elicitation task;modeling task;requirements engineering;software needs;Buildings;Computer science;Conferences;Context modeling;Documentation;Model driven engineering;Software design;Software engineering;Software systems;USA Councils}, 
+	doi={10.1109/FOSE.2007.17}, 
+	ISSN={}, 
+	month={May},
+}
+
+@INPROCEEDINGS{hall2002, 
+	author={J. G. Hall and M. Jackson and R. C. Laney and B. Nuseibeh and L. Rapanotti}, 
+	booktitle={Proceedings IEEE Joint International Conference on Requirements Engineering}, 
+	title={Relating software requirements and architectures using problem frames}, 
+	year={2002}, 
+	volume={}, 
+	number={}, 
+	pages={137-144}, 
+	keywords={formal specification;software architecture;systems analysis;architectural structures;case study;problem frames;software architectures;software development;software requirements;Computer architecture;Counting circuits;Delay;Programming;Shape;Software architecture}, 
+	doi={10.1109/ICRE.2002.1048516}, 
+	ISSN={1090-705X}, 
+	month={},
+}
+
+@Misc{json2018,
+	author       = {JSON},
+	title        = {Introduction to JSON},
+	howpublished = {https://www.json.org/},
+	year         = {2018},
+	note         = {Diakses pada tanggal 3 Januari 2018},
+	url          = {https://www.json.org/},
+}
+
+@Book{pamungkas2017,
+	title     = {\textit{Pengantar dan Implementasi Basis Data}},
+	publisher = {Deepublish},
+	year      = {2017},
+	author    = {Canggih Ajika Pamungkas},
+	address   = {Yogyakarta},
+}
+
+@Misc{omg2018,
+	author       = {OMG},
+	title        = {About The Object Constraint Language Specification Version 2.4},
+	howpublished = {http://www.omg.org/spec/OCL/2.4},
+	year         = {2018},
+	note         = {Diakses pada tanggal 15 Januari 2018},
+	url          = {http://www.omg.org/spec/OCL/2.4},
+}
+
+@Misc{oracle2018,
+	author       = {Oracle, Corp},
+	title        = {Introduction to Web Services},
+	howpublished = {https://docs.oracle.com/cd/E19226-01/820-7627/gijti/index.html},
+	year         = {2018},
+	note         = {Diakses pada tanggal 10 Januari 2018},
+	url          = {https://docs.oracle.com/cd/E19226-01/820-7627/gijti/index.html},
+}
+
+@Misc{pivotal2018,
+	author       = {Pivotal, Software Inc},
+	title        = {Understanding REST},
+	howpublished = {https://spring.io/understanding/REST},
+	year         = {2018},
+	note         = {Diakses pada tanggal 10 Januari 2018},
+	url          = {https://spring.io/understanding/REST},
+}
+
+@Misc{pivotal2018a,
+	author       = {Pivotal, Software Inc},
+	title        = {Understanding JSON},
+	howpublished = {https://spring.io/understanding/json},
+	year         = {2018},
+	note         = {Diakses pada tanggal 10 Januari 2018},
+	url          = {https://spring.io/understanding/json},
+}
+
+@Book{pressman2010,
+	title     = {Software Engineering: A Practitioner's Approach Seventh Edition},
+	publisher = {McGraw-Hill, Inc.},
+	year      = {2010},
+	author    = {Pressman, Roger},
+	address   = {New York},
+	isbn      = {0073375977, 9780073375977},
+}
+
+@Book{supardi2011,
+	title     = {\textit{Semua Bisa Menjadi Programmer Android Basic}},
+	publisher = {PT Elex Media Komputindo},
+	year      = {2011},
+	author    = {Yuniar Supardi},
+	address   = {Jakarta},
+}
+
+@Misc{unsyiah2017,
+	author       = {Humas Unsyiah},
+	title        = {\textit{Kuota Penerimaan Mahasiswa Baru Unsyiah 5.460 Orang}},
+	howpublished = {http://www.unsyiah.ac.id/berita/kuota-penerimaan-mahasiswa-baru-unsyiah-5460-orang},
+	year         = {2017},
+	note         = {Diakses pada tanggal 15 Desember 2017},
+	url          = {http://www.unsyiah.ac.id/berita/kuota-penerimaan-mahasiswa-baru-unsyiah-5460-orang},
+}
+
+@Misc{wave2017,
+	author       = {Denso Wave},
+	title        = {What is QR Code?},
+	howpublished = {http://www.qrcode.com/en/about/},
+	year         = {2017},
+	note         = {Diakses pada tanggal 20 Desember 2017},
+	url          = {http://www.qrcode.com/en/about/},
+}
+
+@book{jackson2001,
+	author = {Jackson, Michael},
+	title = {Problem Frames: Analyzing and Structuring Software Development Problems},
+	year = {2001},
+	isbn = {0-201-59627-X},
+	publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+	address = {Boston, MA, USA},
+}
+
+@Book{yanto2016,
+	title     = {\textit{Manajemen Basis Data Menggunakan MySQL}},
+	publisher = {Deepublish},
+	year      = {2016},
+	author    = {Robi Yanto},
+	address   = {Yogyakarta},
+}
+
+@Book{ableson2012android,
+  title     = {Android in Action},
+  publisher = {Manning},
+  year      = {2012},
+  author    = {Ableson, W.F. and Sen, R. and King, C. .},
+  series    = {Mobile technology},
+  isbn      = {9781617290503},
+  lccn      = {2012361079},
+  url       = {https://books.google.co.id/books?id=wH1gzgAACAAJ},
+}
+
+@Online{nielsen2012,
+  author  = {Jakob Nielsen},
+  title   = {Usability 101: Introduction to Usability.},
+  year    = {2012},
+  url     = {https://www.nngroup.com/articles/usability-101-introduction-to-usability/.},
+  urldate = {2018-04-19},
+}
+
+@Online{Michael,
+  author  = {Michael.},
+  title   = {Extreme Programming – Michael – Medium},
+  year    = {2015},
+  url     = {https://medium.com/@mikesebastian/extreme-programming-c715e6b8e0e9},
+  urldate = {2018-03-18},
+}
+
+@Book{Nazruddin,
+  title     = {Pemrograman Aplikasi Mobile Smartphone dan Tablet PC Berbasis Android.},
+  publisher = {Informatika},
+  year      = {2012},
+  author    = {Nazruddin, Safaat H.},
+}
+
+@Book{supardi2011,
+  title     = {Semua Bisa Menjadi Programmer Android Basic},
+  publisher = {PT Elex Media Komputindo},
+  year      = {2011},
+  author    = {Yuniar Supardi},
+  address   = {Jakarta},
+}
+
+@Online{Permana,
+  author  = {Permana, Y.},
+  title   = {Ini Dia Perbedaan Aplikasi Native, Hybrid atau Web - CodePolitan.com},
+  year    = {2016},
+  url     = {https://www.codepolitan.com/apa-bedanya-aplikasi-native-hybrid-dan-web},
+  urldate = {2018-03-06},
+}
+
+@Online{Wahyuni,
+  author  = {Wahyuni, A. S.},
+  title   = {Apa itu Ionic Framework - CodePolitan.com},
+  year    = {2017},
+  url     = {https://www.codepolitan.com/apa-itu-ionic-framework-57baac4756622-17924},
+  urldate = {2018-03-20},
+}
+
+@Online{Shanardi,
+  author  = {Shanardi, A.},
+  title   = {Pengertian Test Plan},
+  year    = {2017},
+  url     = {http://sis.binus.ac.id/2017/05/03/pengertian-test-plan/},
+  urldate = {2018-03-06},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
