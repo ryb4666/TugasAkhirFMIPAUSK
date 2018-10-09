@@ -6,7 +6,7 @@
 \chapter{METODOLOGI PENELITIAN}
 
 \section{Tempat dan Waktu Penelitian}
-\setlength\parindent{30pt} Penelitian ini dilakukan di Jurusan Informatika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Syiah Kuala Banda Aceh. Waktu yang diperlukan untuk melakukan penelitian ini kurang lebih selama lima bulan, yang dimulai dari bulan Maret 2018 sampai bulan Juni 2018.
+\setlength\parindent{30pt} Penelitian ini dilakukan di Jurusan Informatika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Syiah Kuala Banda Aceh. Waktu yang diperlukan untuk melakukan penelitian ini kurang lebih selama lima bulan, yang dimulai dari bulan Juni 2018 sampai bulan Desember 2018.
 
 % Please remember to add \use{multirow} to your document preamble in order to suppor multirow cells
 \begin{table}[H]
@@ -15,13 +15,13 @@
 	\label{jadwal}
 	\begin{tabular}{|c|l|l|l|l|l|l|l|}
 		\hline
-		\multirow{2}{*}{No} & \multirow{2}{*}{Keterangan} 	& \multicolumn{6}{c|}{Bulan}           																						\\ \cline{3-8} 
-							&                           	& Maret 			& April  			& Mei 				& Juni 				& Juli 				& Agustus 				\\ \hline       
-		1                   & Studi literatur           	&\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                   &                         \\ \hline
-		2                   & Penulisan Proposal           	&                   &\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                         \\ \hline
-		3                   & Pengembangan Aplikasi         &                   &                   & \cellcolor{gray}  & \cellcolor{gray} 	& \cellcolor{gray}  &                         \\ \hline
-		4                   & Evaluasi Sistem               &                   &                   &           		&             		&\cellcolor{gray}	&   \cellcolor{gray}      \\ \hline
-		5                   & Penulisan Laporan Akhir       &                   &                   &                   &        			&      				& \cellcolor{gray}        \\ \hline
+		\multirow{2}{*}{No} & \multirow{2}{*}{Keterangan} 	& \multicolumn{6}{c|}{Bulan}           																										\\ \cline{3-8} 
+							&                           	& Jul				& Agt  			& Sep			& Okt			& Nov			& Des 					\\ \hline       
+		1                   & Studi literatur           	&\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                   &                       	\\ \hline
+		2                   & Penulisan Proposal           	&                   &\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                        	\\ \hline
+		3                   & Pengembangan Aplikasi         &                   &                   & \cellcolor{gray}  & \cellcolor{gray} 	& \cellcolor{gray}  &                            \\ \hline
+		4                   & Evaluasi Sistem               &                   &                   &           		&             		&\cellcolor{gray}	&  \cellcolor{gray}    \\ \hline
+		5                   & Penulisan Laporan Akhir       &                   &                   &                   &        			&      				& \cellcolor{gray}     \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -31,7 +31,7 @@ Alat yang digunakan pada penelitian ini adalah sebagai berikut :
 \begin{enumerate}[a.]
 \item Perangkat Keras (\textit{Hardware})
 	\begin{itemize}
-		\item 1 unit Laptop HP Intel(R) Core(TM) i3
+		\item 1 unit Laptop HP Intel(R) Core(TM) i7 6700HQ
 		\item RAM 8 GB DDR3
 		\item Harddisk 1 TB
 		\item 1 unit Android Samsung S7
@@ -57,15 +57,15 @@ Skema dari alur tahapan penelitian dapat dilihat pada Gambar \ref{alur}
 \end{figure}
 
 \subsection{Analisis Permasalahan}
-Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pangkalan gas LPG Subsidi 3 Kg dalam melakukan pelaporan penyaluran tabung gas subsidi. Aplikasi ini juga membantu agen gas LPG selaku distributor dan pengawasan dari pangkalan gas untuk melakukan rekap laporan penyaluran tabung gas 3 Kg. Aplikasi ini melakukan pelaporan penyaluran tabung gas subsidi dengan cara memindai QR code yang ada pada kartu kendali milik konsumen yang di cetak sebelumnya. Setelah itu data tersebut langsung di kirim langsung ke agen gas LPG bersangkutan. Adapun fitur-fitur yang terdapat pada aplikasi ini adalah :
-\begin{enumerate}[a.]
-		%	\itemsep0em
-		\item Masuk ke dalam aplikasi
-		\item Melihat jadwal pasokan tabung 
+Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pangkalan gas LPG Subsidi 3 Kg dalam melakukan pelaporan penyaluran tabung gas subsidi. Aplikasi ini juga membantu agen gas LPG selaku distributor dan pengawasan dari pangkalan gas untuk melakukan rekap laporan penyaluran tabung gas 3 Kg. Aplikasi ini melakukan pelaporan penyaluran tabung gas subsidi dengan menggunakan NIK(Nomor Induk Kependudukan) dan no telepon sebagai data acuan yang valid. Setelah itu data tersebut langsung di kirim langsung ke agen gas LPG bersangkutan. Adapun fitur-fitur yang terdapat pada aplikasi ini adalah sebagai berikut
+\begin{itemize}
+		\itemsep0em
+		\item Masuk ke dalam aplikasi.
+		\item Melihat jadwal pasokan tabung.
 		\item Mencatat penjualan tabung gas menggunakan NIK sebagai acuan.
-		\item Mencetak kartu kendali untuk konsumen
-		\item Mengubah profile biodata user
-\end{enumerate}
+		\item Mencetak kartu kendali untuk konsumen.
+		\item Mengubah profile biodata user.
+\end{itemize}
 
 \subsection{Studi Literatur}
 Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dari penelitian sebelumnya yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
@@ -88,7 +88,7 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 			\item \textbf{ID: 01}
 			\par Sebagai pangkalan, saya ingin mencatat penjualan tabung ke dalam laporan logbook.
 			\item \textbf{ID: 02}
-			\par Sebagai pangkalan, saya ingin mengetahui jadwal pasokan / penerimaan tabung gas
+			\par Sebagai pangkalan, saya ingin mengetahui jadwal pasokan/penerimaan tabung gas
 			\item \textbf{ID: 03}
 			\par Sebagai pangkalan, saya ingin melakukan login ke dalam aplikasi
 			\item \textbf{ID: 04}
@@ -112,7 +112,8 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 			\caption{Diagram Use-Case}
 			\label{usecase}
 		\end{figure}
-	
+		
+		\newpage
 		\item Kebutuhan Non Fungsional
 		\newline Kebutuhan non-fungsional adalah batasan dalam layanan atau fungsi yang ditawarkan sistem. Dalam penelitian ini, kebutuhan non-fungsional yang digunakan ada dua macam, seperti pada Tabel 3.2.
 		
@@ -149,8 +150,10 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:
 	\begin{enumerate}[a.]
 			\itemsep0em
-			\item \emph {Usability}
+			\item \textit{Usability}
 			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda.
+			\item \textit{Unit Testing}
+			\newline Unit testing fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak.
 		
 	\end{enumerate}
 	
