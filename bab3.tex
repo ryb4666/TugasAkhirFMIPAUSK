@@ -31,7 +31,7 @@ Alat yang digunakan pada penelitian ini adalah sebagai berikut :
 \begin{enumerate}[a.]
 \item Perangkat Keras (\textit{Hardware})
 	\begin{itemize}
-		\item 1 unit Laptop HP Intel(R) Core(TM) i7 6700HQ
+		\item 1 unit Laptop ASUS ROG Intel(R) Core(TM) i7 6700HQ
 		\item RAM 8 GB DDR3
 		\item Harddisk 1 TB
 		\item 1 unit Android Samsung S7
@@ -68,83 +68,81 @@ Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pang
 \end{itemize}
 
 \subsection{Studi Literatur}
-Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dari penelitian sebelumnya yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
+Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dengan meneliti aplikasi atau perangkat lunak yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
 
 \subsection{Pengumpulan Data}
-Data yang digunakan dalam penelitian ini adalah data penyaluran tabung dan format pelaporan yang dipakai. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian.
+Data yang digunakan dalam penelitian ini adalah data penyaluran tabung ke masyarakat dan format pelaporan yang dipakai oleh pangkalan. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian.
 
 \subsection{Perancangan dan Pembuatan Sistem}
-Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yaitu eXtreme Programming (XP). Metode XP fleksibel terhadap perubahan-perubahan sehingga cocok digunakan pada aplikasi ini. Berikut merupakan tahapan perancangan sistem yang akan dilakukan:
+Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yaitu Scrum. Metode Scrum sangat fleksibel terhadap perubahan-perubahan sehingga cocok digunakan pada aplikasi ini. Berikut merupakan tahapan perancangan sistem yang akan dilakukan:
 
 \begin{enumerate}[1.]
 	\item \emph {Planning}
 	
-	Pada tahap ini dikumpulkan kebutuhan awal user atau dalam XP dikenal dengan istilah \emph {user requirement}. Hal ini dibutuhkan agar kebutuhan \emph {output} sistem, dan fitur utama dari aplikasi yang dikembangkan terdefinisikan dengan jelas. Selanjutnya dilakukan analisa kebutuhan awal terhadap aplikasi:
+	Pada tahap ini dilakukan analisa terhadap masalah yang terjadi di lapangan dalam penelitian ini yaitu pangkalan gas LPG 3 Kg dan mencari solusi yang akan memecahkan masalah tersebut dengan mengembangkan suatu sistem. Setelah itu dilakukan tahap inisiasi awal pengembangan sistem yaitu melakukan analisis kebutuhan pada setiap pengguna sistem yaitu Agen dan Pangkalan Gas LPG yang dilanjutkan dengan membuat \textit{storyboard} yaitu gambaran yang menceritakan jalannya sistem yang dibuat secara singkat.
 	
-	\begin{enumerate}[a.]
-		\item \textit{User Story}
-		User story adalah deskripsi singkat dan sederhana mengenai fitur atau fungsi dari software, dilihat dari sudut pandang pengguna. Berikut ini merupakan user story dari kasus penelitian ini.
-		\begin{itemize}
-			\item \textbf{ID: 01}
-			\par Sebagai pangkalan, saya ingin mencatat penjualan tabung ke dalam laporan logbook.
-			\item \textbf{ID: 02}
-			\par Sebagai pangkalan, saya ingin mengetahui jadwal pasokan/penerimaan tabung gas
-			\item \textbf{ID: 03}
-			\par Sebagai pangkalan, saya ingin melakukan login ke dalam aplikasi
-			\item \textbf{ID: 04}
-			\par Sebagai pangkalan, saya ingin mendaftarkan konsumen baru.
-			\item \textbf{ID: 05}
-			\par Sebagai agen, saya ingin melakukan rekap laporan dari masing-masing pangkalan milik saya.
-			\item \textbf{ID: 06}
-			\par Sebagai agen, saya ingin menetapkan kuota tabung per bulan untuk masing-masing pangkalan.
-			\item \textbf{ID: 07}
-			\par Sebagai pangkalan, saya ingin mencetak kartu kendali konsumen untuk pangkalan kecil yang belum memiliki mesin cetak.
-		\end{itemize}
-		Penggunaan nomor unik ID pada user story dilakukan untuk memudahkan pengelolaan \textit{user story} sekaligus membedakan satu \textit{user story} dengan yang lainnya.
-		
-		\item Kebutuhan Fungsional
-		\newline Kebutuhan fungsional, dapat dimodelkan pada use case diagram. Use case diagram adalah diagram yang memodelkan perilaku dari sistem. Di dalam use case diagram terdapat sekumpulan use case, aktor dan hubungan antara use case dan aktor. Use case diagram dapat dilihat pada \ref{usecase} di bawah ini.
-		
-		\vspace{-0.4cm}
-		\begin{figure}[H]
-			\center
-			\includegraphics [width = 12cm, height= 11cm]{gambar/use-case}
-			\caption{Diagram Use-Case}
-			\label{usecase}
-		\end{figure}
-		
-		\newpage
-		\item Kebutuhan Non Fungsional
-		\newline Kebutuhan non-fungsional adalah batasan dalam layanan atau fungsi yang ditawarkan sistem. Dalam penelitian ini, kebutuhan non-fungsional yang digunakan ada dua macam, seperti pada Tabel 3.2.
-		
-		\vspace{-0.4cm}
-		\begin{table}[H]
-			\centering
-			\caption{Kebutuhan Non-Fungsional}
-			\label{kebutuhan}
-			\begin{tabular}{|l|p{5cm} |}
-				\hline
-				Jenis Kebutuhan & Deskripsi \\ 
-				\hline 
-				\textit{Usability} & Sistem yang dibuat harus dapat dipelajari dan digunakan dengan mudah oleh pengguna. Kemudahan-kemudahan tersebut diantaranya kemudahan dalam hal penggunaan sistem. \\ 
-				\hline 
-				\textit{Compatibility} & Sistem dapat diakses melalui beberapa versi sistem operasi Android. \\ 
-				\hline 
-			\end{tabular} 
-		\end{table}
-		
-		
-	\end{enumerate}
+	
 
 	\item \textit{Design}
 	
-	Tahap ini fokus pada desain pembuatan program perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Representasi perangkat lunak yang dikembangkan digambarkan dalam sebuah pemodelan. Tahapan perancangan dilakukan berdasarkan dari hasil analisis kebutuhan perangkat lunak pada tahap sebelumnya. Tahapan desain ini meliputi perancangan Unified Modelling Languange (UML), perancangan database dan perancangan desain tampilan (user interface).
+	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram yang ditunjukkan pada Gambar \ref{usecase} untuk setiap aktor dan storyboard. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
+	\newpage
+	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Adapun beberapa contoh desain tampilan antarmuka dari aplikasi yang akan dirancang seperti Gambar \ref{appPangkalan} dan Gambar \ref{appAgen}.
+	
+	\vspace{-0.4cm}
+	\begin{figure}[H]
+		\center
+		\includegraphics [width = 12cm, height= 11cm]{gambar/use-case}
+		\caption{Diagram Use-Case}
+		\label{usecase}
+	\end{figure}
+	
+	
+	\begin{figure}[H]
+		\center
+		\begin{subfigure}[t]{6cm}
+			\center
+		\includegraphics [width = 6cm]{gambar/and/login}
+		\caption{Halaman Login}\label{login}		
+		\end{subfigure}\hspace{0.3cm}
+		\begin{subfigure}[t]{6cm}
+			\center
+			\includegraphics [width = 6cm]{gambar/and/beranda}
+			\caption{Menu Utama}\label{beranda}		
+		\end{subfigure}\vspace{0.3cm}
+		\begin{subfigure}[t]{6cm}
+			\center
+			\includegraphics [width = 6cm]{gambar/and/pembelian}
+			\caption{Halaman Pembelian Tabung}\label{pembelian}		
+		\end{subfigure}\hspace{0.3cm}
+		\begin{subfigure}[t]{6cm}
+			\center
+			\includegraphics [width = 6cm]{gambar/and/registrasi}
+			\caption{Halaman Registrasi}\label{registrasi}		
+		\end{subfigure}
+		\caption{Tampilan aplikasi untuk pangkalan gas LPG }\label{appPangkalan}
+	\end{figure}
+
+	\begin{figure}[H]
+		\center
+		\begin{subfigure}[t]{7cm}
+			\center
+			\includegraphics [width = 7cm]{gambar/web/login}
+			\caption{Halaman Login}\label{login}		
+		\end{subfigure}\hspace{0.2cm}
+		\begin{subfigure}[t]{7cm}
+			\center
+			\includegraphics [width = 7cm]{gambar/web/dashboard}
+			\caption{Menu Utama}\label{beranda}		
+		\end{subfigure}
+		\caption{Tampilan aplikasi untuk agen gas LPG }\label{appAgen}
+	\end{figure}
+
 	
 	\item \textit{Coding}
 	
-	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan bahasa pemrograman Typescript untuk aplikasi berbasis Android dan bahasa pemrograman PHP untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database.
-	
-	\newpage
+	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java.
+
 	 \item \textit{Testing}
 	
 	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:

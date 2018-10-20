@@ -9,37 +9,36 @@
 Gas LPG 3 Kg sekarang telah menjadi kebutuhan utama bagi masyarakat di Indonesia sejak pemerintah melakukan konversi dari minyak tanah ke LPG (\textit{Liquified Petroleum Gas}) 3 kilogram (Kg) yang dilakukan sejak 2007 dan telah mampu memberikan penghematan yang signifikan pada kas negara. Namun sekarang ketersediaan tabung gas LPG subsidi 3 Kg semakin berkurang menyebabkan pertamina selaku distributor memberlakukan kebijakan kepada Pangkalan Gas untuk wajib mengisi \textit{Logbook} Distribusi Tabung Gas 3 Kg. Pada \textit{Logbook} memiliki seluruh informasi tercatat lengkap mulai dari nama pembeli, alamat, jumlah pembelian, jenis pembelian, dan data agen yang menjadi distributor. Sehingga  pembeli yang ingin membeli gas subsidi ini harus menunjukkan kartu keluarga (KK) dan Kartu Tanda Penduduk (KTP) sehingga jumlah tabung yang di beli dapat dibatasi berdasarkan KK.
 \par Dengan diberlakukannya kebijakan baru dalam hal penyaluran gas ini, ada beberapa permasalahan yang muncul seperti penerapan \textit{Logbook} ini masih juga mengalami kendala karena pelaporan gas LPG 3 Kg masih di lakukan secara manual sehingga terkadang banyak data penyaluran gas yang salah atau tidak sesuai dengan stok di pangkalan, dalam hal registrasi pembeli baru masih dilakukan dengan cara mengisi formulir yang sangat banyak sehingga proses registrasi memerlukan waktu yang lama. Memang dengan kebijakan yang baru dapat meminimalisir potensi kecurangan dalam membeli tabung gas LPG 3 Kg karena pangkalan akan mengecek nomor KK (Kartu Keluarga) dari si pembeli, namun proses pengecekan tersebut terkadang memakan banyak waktu dan ada potensi terjadinya kesilapan pada saat pengecekan.  Hal ini tentu saja akan menghambat pekerjaan dan membutuhkan waktu yang relatif lama sehingga seharusnya ada suatu pembaharuan sistem yang dilakukan sebagai langkah antisipasi.
 \par Berdasarkan permasalahan tersebut, dibutuhkan sebuah aplikasi yang mampu mendata penyaluran gas LPG 3 Kg ke masyarakat. Sistem ini menggunakan platform Android untuk menjalankan aktivitas penyaluran tabung gas LPG seperti pembelian tabung, penerimaan tabung dari distributor, dan pelaporan gas 3 Kg. User dalam sistem ini adalah operator pangkalan gas LPG dan agen. Sedangkan, pembeli akan menggunakan KTP (Kartu Tanda Penduduk) sebagai alat identifikasi saat melakukan pembelian tabung dan operator akan melakukan verifikasi terhadap KTP dan melakukan pencatatan penjualan. Operator juga dapat melakukan register pembeli baru via aplikasi Android. Kebutuhan utama dari pengguna aplikasi ini adalah informasi penyaluran gas LPG 3 Kg dapat diakses secara cepat, mudah dan akurat dari perangkat mobile dengan layanan internet di dalamnya. Untuk mendukung kebutuhan akses informasi tersebut, dibutuhkan suatu aplikasi yang inovatif. Sistem operasi Android menawarkan kemampuan untuk membangun aplikasi yang inovatif serta bersifat open source.
-\par Android digunakan sebagai platform pada aplikasi ini karena beberapa alasan salah satunya adalah Android merupakan OS (\textit{operating system }) yang paling disukai oleh banyak orang dengan harga yang tidak terlalu tinggi. Android juga memiliki kelebihan dalam hal \textit{multitasking}, karena dapat menghubungkan dan mengerjakan beberapa aplikasi sekaligus. Android juga menyediakan fitur customisasi yang dapat memodifikasi smartphone sesuka hati. Dalam pengembangannya, aplikasi Android menggunakan bahasa pemrograman java yang di nilai oleh beberapa pengembang (\textit{developer}) aplikasi \textit{mobile} sebagai bahasa pemrograman yang kaku.
-\par Namun saat ini, pengembangan aplikasi Android telah banyak mengalami kemajuan. Hadirnya Ionic yaitu \textit{framework} yang dikhususkan untuk membangun aplikasi mobile hybrid dengan HTML5, CSS dan AngularJS. Ionic menggunakan Node.js, SASS, dan AngularJS sebagai engine-nya. Ionic dilengkapi dengan komponen-komponen CSS seperti \textit{button, list, form, grids, tabs,} dan masih banyak lagi. Sehingga Ionic merupakan sebuah teknologi web yang bisa digunakan untuk membuat suatu aplikasi \textit{mobile}. Karena hybrid maka aplikasi hanya dibuat sekali tetapi sudah bisa dirilis di lebih dari satu \textit{platform} alias \textit{cross-platform}.
-\par Kebanyakan orang menginginkan suatu kemudahan dalam penggunaan aplikasi. Kemudahan dalam menggunakan aplikasi dapat diukur dengan adanya pengujian tingkat \textit{usability}. Pengujian usability bertujuan untuk mengevaluasi produk aplikasi dengan secara langsung mengujinya kepada pengguna. Usability testing memiliki beberapa teknik evaluasi yang berbeda yaitu teknik \textit{Think-Aloud, Shadowing Method, Coaching Method, Question Asking, Protocol, Teaching Method, Performance Measurement, Remote Testing dan Eye Tracker}. Diantara beberapa teknik tersebut terdapat teknik dengan mengukur performa keberhasilan dan kecepatan pengerjaan \textit{task}(perintah) yaitu teknik Performance Measurement. Secara umum \textit{usability} mengacu pada metode bagaimana meningkatkan kemudahan dalam menggunakan suatu produk selama proses desain \citep{nielsen2012}. Hasil dari pengukuran tingkat usability nantinya bisa digunakan untuk mengembangkan aplikasi agar lebih baik dari sebelumnya.
+\par Saat ini, pengembangan aplikasi Android telah banyak mengalami kemajuan yang pesat. Hadirnya Ionic yaitu \textit{framework} yang dikhususkan untuk membangun aplikasi mobile hybrid dengan HTML5, CSS dan AngularJS. Ionic menggunakan Node.js, SASS, dan AngularJS sebagai engine-nya. Ionic dilengkapi dengan komponen-komponen CSS seperti \textit{button, list, form, grids, tabs,} dan masih banyak lagi. Sehingga Ionic merupakan sebuah teknologi web yang bisa digunakan untuk membuat suatu aplikasi \textit{mobile}. Karena hybrid maka aplikasi hanya dibuat sekali tetapi sudah bisa dirilis di lebih dari satu \textit{platform} alias \textit{cross-platform}.
+\par Kebanyakan orang menginginkan suatu kemudahan dalam penggunaan aplikasi. Kemudahan dalam menggunakan aplikasi dapat diukur dengan adanya pengujian tingkat \textit{usability}. Pengujian usability bertujuan untuk mengevaluasi produk aplikasi dengan secara langsung mengujinya kepada pengguna. Secara umum \textit{usability} mengacu pada metode bagaimana meningkatkan kemudahan dalam menggunakan suatu produk selama proses desain \citep{nielsen2012}. Hasil dari pengukuran tingkat usability nantinya bisa digunakan untuk mengembangkan aplikasi agar lebih baik dari sebelumnya.
 \par Aplikasi ini diharapkan memiliki nilai usability yang baik, agar pengguna bisa dengan mudah menggunakan aplikasi dan dapat melayani kebutuhan pengguna dengan baik. Oleh karena itu fokus dari penilitian ini adalah untuk memberikan informasi penyaluran tabung gas LPG 3 Kg kepada pangkalan gas melalui smartphone berbasis Android. Diharapkan aplikasi ini dapat membantu pihak pangkalan dan agen gas LPG untuk menyalurkan gas LPG subsidi 3 Kg.
 
-
+\newpage
 \section{Rumusan Masalah}
 Berdasarkan latar belakang yang telah diuraikan di atas, ada beberapa permasalahan yang akan dirumuskan pada penelitian ini, diantaranya:
 \begin{enumerate}
-	\item Pangkalan Gas masih melakukan pendataan terhadap penyaluran tabung gas LPG 3 Kg secara manual.
-	\item Bagaimana pangkalan dapat melakukan pendataan tabung gas LPG 3 Kg yang terjual dengan mudah dan cepat.
-	\item Bagaimana agen gas LPG 3 Kg dapat melakukan pelaporan penyaluran gas LPG 3 Kg dengan mudah dan cepat.
-	\item Bagaimana memanfaatkan smartphone berbasis Android untuk melakukan pendataan dan pelaporan penyaluran tabung LPG 3 Kg.
+	\item Apa saja kebutuhan yang diperlukan pengguna untuk merancang aplikasi pelaporan penyaluran Gas LPG 3 Kg.
+	\item Bagaimana merancang aplikasi pelaporan penyaluran Gas LPG 3 Kg yang berbasis android.
+	\item Bagaimana merancang aplikasi pelaporan penyaluran Gas LPG 3 Kg yang dapat dipakai dengan mudah dan cepat.
+	\item Bagaimana menguji kelayakan aplikasi yang telah dibangun.
+	.
 \end{enumerate}
 
 \section{Tujuan Penelitian}
 Tujuan dari penelitian ini adalah sebagai berikut:
 \begin{enumerate}
-	\item Merancang dan membuat aplikasi berbasis Mobile Hybrid yang dapat digunakan untuk mendata penyaluran tabung gas 3 Kg.
-	\item Menerapkan metode User Centered Design (UCD) dalam merancang aplikasi. 
-	\item Memberikan fasilitas yang dapat menampilkan data penyaluran tabung gas LPG 3 Kg dan mencetak hasil pelaporan via perangkat \textit{mobile}.
-	\item Menggunakan dan mengimplementasikan Google Cloud sebagai \textit{Web
-		service}.
+	\item Melakukan wawancara atau survei kebutuhan pengguna untuk mendapatkan fitur-fitur dari sistem yang akan dirancang dan dibangun.
+	\item merancang aplikasi pelaporan penyaluran Gas LPG 3 Kg berbasis android.
+	\item merancang aplikasi pelaporan penyaluran Gas LPG 3 Kg yang dapat dipakai dengan mudah dan cepat.
+	\item menguji kelayakan dari aplikasi yang telah dibangun ntuk memastikan aplikasi telah sesuai dengan kebutuhan pengguna.
 \end{enumerate}
 
 
 \section{Manfaat Penelitian}
 Manfaat dari penelitian ini adalah sebagai berikut:
 \begin{enumerate}
-	\item Diharapkan aplikasi ini dapat membantu dalam semua proses terkait penyaluran tabung gas LPG 3 Kg.
-	\item Diharapkan aplikasi ini menjadi bahan pembelajaran untuk mengembangkan sebuah \textit{mobile application} yang lebih baik dan berguna bagi masyarakat.
+	\item Meningkatkan efektivitas dalam semua proses terkait penyaluran tabung gas LPG 3 Kg.
+	\item Menjadi bahan pembelajaran untuk mengembangkan sebuah \textit{mobile application} yang lebih baik dan berguna bagi masyarakat.
 	\item Diharapkan aplikasi ini dapat mengawasi penyaluran tabung gas 3 Kg dan mempermudah masyarakat yang berhak untuk mendapatkan gas 3 Kg.
 \end{enumerate}
 
