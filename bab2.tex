@@ -6,8 +6,8 @@
 \chapter{TINJAUAN KEPUSTAKAAN}                
 
 \section{Struktur Penyaluran Gas LPG 3 Kg}
-\par Dalam pendistribusian gas elpiji ke masyarakat, sepenuhnya dilakukan oleh Pertamina dengan sistem \textit{close loop  supply chain}, yaitu suatu aliran produk mulai dari konsumen, kembali ke pabrik untuk diproses ulang kemudian kembali lagi ke konsumen sebagai barang baru.
-\par Dalam alur distribusi LPG 3 Kg, pertama-tama gas LPG di produksi di Depot LPG. Kemudian dari Depot LPG di distribusi kan menuju SPPBE (Stasiun Pengisian dan Pengangkutan Bulk LPG ) yang dikelola oleh Pertamina dan pihak swasta, kemudian setelah itu paket LPG diterima oleh agen LPG dan selanjutnya sebagai ujung tombaknya akan di distribusikan ke sub agen atau pangkalan LPG. Sub agen LPG inilah yang berhubungan langsung dengan pengecer, warung atau juga konsumen. seperti pada \ref{penyaluran}.
+\par Dalam pendistribusian gas elpiji ke masyarakat, sepenuhnya dilakukan oleh Pertamina dengan sistem siklus rantai suplai tertutup, yaitu suatu aliran produksi yang dimulai dari konsumen, kembali ke pabrik untuk diproses ulang kemudian kembali lagi ke konsumen sebagai barang baru \citep{alurLPG}.
+\par Dalam alur distribusi LPG 3 Kg, pertama-tama gas LPG di produksi di Depot LPG. Kemudian dari Depot LPG di distribusi kan menuju SPPBE (Stasiun Pengisian dan Pengangkutan Bulk LPG ) yang dikelola oleh Pertamina dan pihak swasta, kemudian setelah itu paket LPG diterima oleh agen LPG dan selanjutnya sebagai ujung tombaknya akan di distribusikan ke sub agen atau pangkalan LPG. Sub agen LPG inilah yang berhubungan langsung dengan pengecer, warung atau juga konsumen \citep{alurLPG}. seperti pada Gambar \ref{penyaluran}.
 \begin{figure}[H]
 	\centering
 	\includegraphics [width = 10cm, height= 10cm]{gambar/struktur-penyaluran}
@@ -56,7 +56,7 @@ Java pertama kali diluncurkan pada tahun 1995 sebagai bahasa pemrograman umum (\
 \end{itemize}
 
 \section{Servlet}
-Servlet merupakan salah satu modul perpustakaan yang ditulis dalam bahasa pemrograman Java yang berupa \textit{class} yang digunakan untuk merespon permintaan \textit{client}. Servlet tidak terikat dengan protokol client-server tertentu tetapi paling sering menggunakan protokol HTTP dan kata "Servlet" sering digunakan dalam arti "HTTP Servlet" \citep{servlet}. Penggunaan umum untuk HTTP Servlet meliputi:
+Servlet merupakan salah satu modul perpustakaan yang ditulis dalam bahasa pemrograman Java yang berupa \textit{class} yang digunakan untuk merespon permintaan \textit{client}. Servlet tidak terikat dengan protokol client-server tertentu tetapi paling sering menggunakan protokol HTTP dan kata "Servlet" sering digunakan dalam arti "HTTP Servlet" \citep{zeiger1999servlet}. Penggunaan umum untuk HTTP Servlet meliputi:
 \begin{itemize}
 	\itemsep0em
 	\item Memproses dan / atau menyimpan data yang dikirimkan oleh formulir HTML.
@@ -65,33 +65,33 @@ Servlet merupakan salah satu modul perpustakaan yang ditulis dalam bahasa pemrog
 \end{itemize}
 \newpage
 \section{Google App Engine}
-Google App Engine (GAE) adalah layanan untuk mengembangkan dan hosting aplikasi Web di pusat data Google, yang termasuk ke dalam komputasi awan kategori Platform As Services (PaaS). Aplikasi web yang di jalankan pada GAE  dijalankan di beberapa server untuk redundansi dan memungkinkan penskalaan sumber daya sesuai dengan persyaratan trafik tertentu. App Engine secara otomatis akan mengalokasikan sumber daya tambahan ke server untuk mengakomodasi peningkatan beban. Kelebihan dari GAE adalah sebagai berikut: \citep{technopedia}
+Google App Engine (GAE) adalah layanan untuk mengembangkan dan hosting aplikasi Web di pusat data Google, yang termasuk ke dalam komputasi awan kategori Platform As Services (PaaS). Google App Engine merupakan layanan yang memaparkan berbagai bagian-bagian dari Infrastruktur skalabilitas tinggi yang di miliki Google. Dengan layanan baru yang disediakan oleh Google ini kita dapat dengan mudah untuk membuat aplikasi handal yang berjalan di bawah beban yang berat dan menggunakan sejumlah data yang besar. Beberapa fitur utama yang dimiliki GAE adalah sebagai berikut: \citep{zahariev2009google}
 \begin{itemize}
 	\itemsep0em
-	\item Server yang tersedia tanpa memerlukan konfigurasi
-	\item Power scaling yang menurunkan hingga ke tingkat "gratis" ketika saat penggunaan sumber daya minimal.
-	\item Alat komputasi awan yang otomatis
+	\item Layanan web yang dinamis, dengan dukungan penuh untuk teknologi web yang umum.
+	\item penyimpanan persisten dengan kueri, pengurutan, dan transaksi.
+	\item Penskalaan otomatis dan penyeimbangan beban.
+	\item API untuk melakukan autentikasi pengguna dan mengirim email menggunakan Akun Google.
+	\item lingkungan pengembangan lokal yang memiliki fitur lengkap yang dapat melakukan simulasi Google App Engine di komputer pengguna.
 \end{itemize}
 
-\section{Aplikasi Hybrid (\textit{Mobile Hybrid App})}
-Aplikasi hybrid adalah aplikasi web yang ditransformasikan menjadi kode native pada platform seperti iOS atau Android. Aplikasi hybrid biasanya menggunakan browser untuk mengijinkan aplikasi web mengakses berbagai fitur di device mobile seperti Push Notification, Contacts, atau Offline Data Storage. Beberapa tools untuk mengembangkan aplikasi hybrid antara lain Phonegap, Rubymotion dan lain-lain \citep{Permana}.
+\section{Aplikasi \textit{hybrid} (\textit{Mobile Hybrid App})}
+\par Sekarang pasar aplikasi mobile telah menyentuh angka lebih dari 2 juta aplikasi, dengan pengunduhan miliaran kali per tahun dari sejumlah toko aplikasi tertentu (Google Play Store dan Apple App Store). namun, kode yang digunakan untuk satu platform mobile misalnya android yang menggunakan bahasa pemrograman Java tidak dapat digunakan pada platform lain contohnya IOS yang menggunakan bahasa pemrograman Swift. Maka pengembangan dan pemeliharaan aplikasi Native untuk banyak platform menjadi sebuah tantangan besar yang dapat mempengaruhi arah pengembangan aplikasi mobile. Aplikasi \textit{hybrid} dikembangkan dengan menggunakan teknologi web standar misalnya  dan semua permintaan layanan ke API Platform menggunakan oleh API JavaScript \textit{cross-platform}. Dalam konteks ini, kerangka kerja (\textit{framework}) pengembangan aplikasi \textit{hybrid} misalnya Apache Cordova dapat didefinisikan sebagai komponen perangkat lunak yang memungkinkan para pengembang untuk membuat aplikasi \textit{mobile} berbasis web yang dapat berjalan di berbagai platform \citep{malavolta2015hybrid}.
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics [width = 12cm, height= 8cm]{gambar/hybrid}}
 	\caption{Perbandingan Aplikasi Native \& Hybrid}
 	\label{android}
 \end{figure}
-\par Keuntungan membangun aplikasi hybrid diantaranya pemeliharaan project menjadi semakin mudah jika dibandingkan dengan aplikasi native. Aplikasi hybrid juga, bisa dibangun secara cepat untuk keperluan cross platform dan dana yang bisa menjadi lebih hemat jika dibandingkan dengan native.
-
 
 \section{Ionic Framework}
 
-Ionic adalah \textit{framework front-end} yang dikhususkan untuk membangun aplikasi \textit{hybrid} dengan HTML5, CSS dan AngularJS. Ionic menggunakan Node.js SASS, AngularJS sebagai \textit{engine}-nya. Ionic dilengkapi dengan komponen-komponen CSS seperti \textit{button, list, card, form, grids, tabs}, dan masih banyak lagi. Jadi Ionic itu merupakan teknologi web yang bisa digunakan untuk membuat suatu aplikasi \textit{mobile}. Karena \textit{hybrid} maka aplikasi hanya dibuat satu kali tetapi sudah bisa dirilis di lebih dari satu \textit{platform} dengan kata lain \textit{cross-platform} \citep{Wahyuni}.
+Ionic adalah \textit{framework front-end} yang dikhususkan untuk membangun aplikasi \textit{hybrid} dengan HTML5, CSS dan AngularJS. Ionic menggunakan Node.js SASS, AngularJS sebagai \textit{engine}-nya. Ionic dilengkapi dengan komponen-komponen CSS seperti \textit{button, list, card, form, grids, tabs}, dan masih banyak lagi. Jadi Ionic itu merupakan teknologi web yang bisa digunakan untuk membuat suatu aplikasi \textit{mobile}. Karena \textit{hybrid} maka aplikasi hanya dibuat satu kali tetapi sudah bisa dirilis di lebih dari satu \textit{platform} dengan kata lain \textit{cross-platform} \citep{Ionic}.
 
 
 \section{Apache Cordova}
-\par Seperti yang telah dijelaskan di atas, bahwa Ionic hanya menyediakan \textit{framework Front-end} sedangkan untuk mengubahnya ke dalam \textit{platform} Android dan IOS, Ionic menggunakan Apache Cordova. Apache Cordova adalah \textit{platform} untuk membangun aplikasi \textit{mobile native} menggunakan HTML, CSS dan JavaScript. Native mobile application yang didukung antara lain Android, iOS, Windows Phone dan Blackberry.
-\par Apache Cordova berisi sekumpulan API (\textit{Application Programming Interface}) untuk mengakses device dari perangkat mobile. Device itu antara lain kamera, GPS (\textit{Global Positioning System}), storage dan lain-lain.  Dengan menunggunakan UI (\textit{User Interface}) framework seperti jQuery Mobile, Dojo Mobile atau Sencha Touch, maka kita dapat mengakses API ini. Dengan kata lain kita dapat membangun aplikasi hanya menggunakan HTML, CSS dan Javascript.
+\par Seperti yang telah dijelaskan di atas, bahwa Ionic hanya menyediakan \textit{framework Front-end} sedangkan untuk mengubahnya ke dalam \textit{platform} Android dan IOS, Ionic menggunakan Apache Cordova. Apache Cordova adalah kerangka kerja(\textit{framework}) \textit{open-source} yang populer untuk mengembangkan aplikasi \textit{mobile hybrid}. Aplikasi yang dibuat menggunakan Apache Cordova diimplementasikan sebagai halaman web. Halaman web ini dapat menggunakan komponen-komponen teknologi web standar. Komponen kunci untuk memahami cara kerja dari Apache Cordova adalah \textit{WebView}. \textit{WebView} adalah komponen yang disediakan oleh \textit{platform native} untuk memuat dan menjalankan sebuah halaman web. Fitur utama dari Cordova adalah plugin UI(\textit{user interface}) yang memungkinkan kode JavaScript yang berjalan di halaman web untuk dapat berkomunikasi dengan komponen \textit{native} \citep{cheng2017build}.
+
 
 
 \section{Angular}
@@ -127,7 +127,7 @@ Scrum adalah bagian dari metode Agile yang dirancang untuk menambah fokus, kejel
 \par \textit{Sprint Planning} adalah proses untuk merencanakan pekerjaan yang akan dikerjakan di \textit{Sprint}. Perencanaan ini dilakukan secara kolaboratif oleh seluruh anggota tim Scrum. \textit{Sprint Planning} memiliki batasan waktu maksimal delapan jam untuk Sprint yang berdurasi satu
 bulan. \textit{Daily Scrum} adalah acara untuk \textit{Development Team} yang memiliki batasan waktu 15 menit. Dilakukan setiap hari selama Sprint berlangsung. \textit{Development Team} akan membuat rencana kerja untuk 24 jam ke depan. Acara ini mengoptimalkan kolaborasi dan performa dari tim dengan melakukan inspeksi pada pekerjaan yang dilakukan semenjak Daily Scrum sebelumnya.
 
-\par \textit{Sprint Review} diselenggarakan di akhir setiap \textit{Sprint} untuk menginspeksi \textit{Increment} dan mengadaptasi \textit{Product Backlog} bila diperlukan. Pada saat \textit{Sprint Review}, tim Scrum dan pemegang kepentingan berkolaborasi untuk meninjau apa yang sudah   diselesaikan di Sprint. \textit{Sprint Retrospective} diselenggarakan setelah \textit{Sprint Review} dan sebelum \textit{Sprint Planning} berikutnya. Acara ini diselenggarakan paling lama tiga jam untuk Sprint yang berdurasi satu bulan. Untuk \textit{Sprint} yang lebih singkat, durasi acara ini biasanya lebih singkat \citep{panduanScrum}. Tujuan dari \textit{Sprint Retrospective} adalah:
+\par \textit{Sprint Review} diselenggarakan di akhir setiap \textit{Sprint} untuk menginspeksi \textit{Increment} dan mengadaptasi \textit{Product Backlog} bila diperlukan. Pada saat \textit{Sprint Review}, tim Scrum dan pemegang kepentingan berkolaborasi untuk meninjau apa yang sudah   diselesaikan di Sprint. \textit{Sprint Retrospective} diselenggarakan setelah \textit{Sprint Review} dan sebelum \textit{Sprint Planning} berikutnya. Acara ini diselenggarakan paling lama tiga jam untuk Sprint yang berdurasi satu bulan. Untuk \textit{Sprint} yang lebih singkat, durasi acara ini biasanya lebih singka \citep{sutherlandpanduan}. Tujuan dari \textit{Sprint Retrospective} adalah:
 \begin{itemize}
 	\itemsep0em
 	\item Melakukan inspeksi bagaimana jalannya Sprint terakhir yang terkait dengan orang-orang, hubungan antar mereka, proses, dan alat-alat yang digunakan.
@@ -138,14 +138,13 @@ bulan. \textit{Daily Scrum} adalah acara untuk \textit{Development Team} yang me
 
 \section {\textit{Test Plan}}
 \par Test Plan merupakan dokumen yang berisi definisi tujuan dan sasaran pengujian dalam lingkup iterasi (atau proyek), item-item yang menjadi target pengujian, pendekatan yang akan diambil, sumber daya yang dibutuhkan dan point untuk diproduksi. Dengan kata lain test plan dapat disebut sebagai perencanaan atau skenario untuk melakukan testing yang akan dilakukan baik oleh expert atau user umum. 
-\par Tujuan umum membuat test plan secara umum adalah untuk memudahkan developer untuk melakukan testing agar testing yang dilakukan menjadi jelas sehingga hasilnya lebih berguna dan efisien. Tentunya dalam proses pembuatan test plan ini memerlukan beberapa langkah seperti berikut : \citep{guru99}
+\par Tujuan umum membuat test plan secara umum adalah untuk memudahkan developer untuk melakukan testing agar testing yang dilakukan menjadi jelas sehingga hasilnya lebih berguna dan efisien. Tentunya dalam proses pembuatan test plan ini memerlukan beberapa langkah seperti berikut : \citep{software2008ieee}
 \begin{itemize}
 	\item {Melakukan Analisa Produk}
 	\newline Pada tahap ini kita harus meneliti seluruh bagian dari produk dan  meninjau dokumentasi dari produk. meninjau dokumentasi produk akan membantu memahami semua fitur-fitur dalam produk tersebut
 	
 	\item {Mengembangkan Strategi Pengujian}
 	\newline Strategi pengujian adalah langkah yang penting saat membuat \textit{test plan}. berikut tahapan membuat strategi pengujian :
-	\newpage
 	\begin{itemize}
 		\itemsep0em
 		\item Mendefinisikan cakupan dari pengujian
@@ -168,6 +167,7 @@ bulan. \textit{Daily Scrum} adalah acara untuk \textit{Development Team} yang me
 	\item {Merencanakan Sumber Daya}
 	\newline Rencana sumber daya merupakan ringkasan rinci dari semua jenis sumber daya yang dibutuhkan untuk menyelesaikan tugas proyek. Sumber daya dapat berupa manusia, peralatan dan material yang dibutuhkan untuk menyelesaikan proyek.
 	
+	\newpage
 	\item Merencanakan Lingkungan Pengujian
 	\newline Lingkungan pengujian adalah pengaturan perangkat lunak dan perangkat keras yang akan digunakan tim pengujian untuk melakukan uji coba. Lingkungan pengujian terdiri dari lingkungan bisnis dan pengguna yang nyata, serta lingkungan fisik, seperti server, lingkungan yang menjalankan ujung depan.
 	
@@ -180,11 +180,10 @@ bulan. \textit{Daily Scrum} adalah acara untuk \textit{Development Team} yang me
 \end{itemize}
 
 \section {\textit{Usability Testing}}
-\par \textit{Usability Testing} atau tes produk merupakan metode riset untuk mengembangkan dan menyempurnakan produk baru maupun yang telah ada. Inti dari riset ini adalah mendudukkan pengguna/pelanggan di pusat, lalu mengambil pelajaran dari sana. maka dalam test ini, mutlak adanya pengamatan secara langsung \citep{nielsen2012}
-\par Dengan mendokumentasikan pengalaman aktual para calon pengguna aplikasi/produk dapat dievealuasi, sebab dari uji ini diharapkan akan menangkap kekuatan dan kelemahan dari setiap aspek yang ada pada aplikasi itu sendiri.
+\par \textit{Usability Testing} atau tes produk merupakan metode riset untuk mengembangkan dan menyempurnakan produk baru maupun yang telah ada. Inti dari riset ini adalah mendudukkan pengguna/pelanggan di pusat, lalu mengambil pelajaran dari sana. maka dalam test ini, mutlak adanya pengamatan secara langsung. Dengan mendokumentasikan pengalaman aktual dari para calon pengguna aplikasi/produk diharapkan akan menangkap kekuatan dan kelemahan dari setiap aspek yang ada pada aplikasi itu sendiri \citep{nielsen2012}.
 
 \section {\textit{Unit Testing}}
-\textit{Unit Testing} adalah metode verifikasi perangkat lunak di mana programmer menguji suatu unit program layak untuk tidaknya dipakai. Unit testing ini fokusnya pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak. Unit-unit kecil ini dapat berupa prosedur atau fungsi, sekumpulan prosedur atau fungsi yang ada dalam satu file jika dalam pemrograman terstruktur, atau kelas, bisa juga kumpulan kelas dalam satu package. \citep{feridi}
+\textit{Unit Testing} adalah metode untuk melakukan verifikasi pada perangkat lunak di mana programmer menguji suatu unit program layak untuk dipakai. Unit testing ini fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak. Unit-unit kecil ini dapat berupa prosedur atau fungsi, sekumpulan prosedur atau fungsi yang ada dalam satu file jika dalam pemrograman terstruktur, atau kelas, bisa juga kumpulan kelas dalam satu package. \citep{rosa2013rekayasa}
 
 %-----------------------------------------------------------------------------%
 

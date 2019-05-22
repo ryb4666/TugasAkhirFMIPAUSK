@@ -61,9 +61,9 @@ Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pang
 \begin{itemize}
 		\itemsep0em
 		\item Masuk ke dalam aplikasi.
-		\item Melihat jadwal pasokan tabung.
 		\item Mencatat penjualan tabung gas menggunakan NIK sebagai acuan.
-		\item Mencetak kartu kendali untuk konsumen.
+		\item Melihat histori pembelian gas konsumen.
+		\item Melihat foto konsumen yang membeli gas
 		\item Mengubah profile biodata user.
 \end{itemize}
 
@@ -71,7 +71,11 @@ Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pang
 Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dengan meneliti aplikasi atau perangkat lunak yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
 
 \subsection{Pengumpulan Data}
-Data yang digunakan dalam penelitian ini adalah data penyaluran tabung ke masyarakat dan format pelaporan yang dipakai oleh pangkalan. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian.
+Data yang digunakan dalam penelitian ini adalah data penyaluran tabung ke masyarakat dan format pelaporan yang dipakai oleh pangkalan. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian. Pada tahap pengembangan ini, akan menghasilkan luaran-luaran seperti :
+	\begin{itemize}
+		\item Menjelaskan lebih detail mengenai bagaimana alur penyaluran gas LPG 3 Kg dari agen gas LPG sampai ke konsumen.
+		\item Menjelaskan secara detail bagaimana format pelaporan yang dipakai agen gas untuk memantau penyaluran gas LPG 3 Kg.
+	\end{itemize}
 
 \subsection{Perancangan dan Pembuatan Sistem}
 Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yaitu Scrum. Metode Scrum sangat fleksibel terhadap perubahan-perubahan sehingga cocok digunakan pada aplikasi ini. Berikut merupakan tahapan perancangan sistem yang akan dilakukan:
@@ -79,81 +83,45 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 \begin{enumerate}[1.]
 	\item \emph {Planning}
 	
-	Pada tahap ini dilakukan analisa terhadap masalah yang terjadi di lapangan dalam penelitian ini yaitu pangkalan gas LPG 3 Kg dan mencari solusi yang akan memecahkan masalah tersebut dengan mengembangkan suatu sistem. Setelah itu dilakukan tahap inisiasi awal pengembangan sistem yaitu melakukan analisis kebutuhan pada setiap pengguna sistem yaitu Agen dan Pangkalan Gas LPG yang dilanjutkan dengan membuat \textit{storyboard} yaitu gambaran yang menceritakan jalannya sistem yang dibuat secara singkat.
+	Pada tahap ini dilakukan analisa terhadap masalah yang terjadi di lapangan dalam penelitian ini yaitu pangkalan gas LPG 3 Kg dan mencari solusi yang akan memecahkan masalah tersebut dengan mengembangkan suatu sistem. Setelah itu dilakukan tahap inisiasi awal pengembangan sistem yaitu melakukan analisis kebutuhan pada setiap pengguna sistem yaitu Agen dan Pangkalan Gas LPG yang dilanjutkan dengan membuat \textit{storyboard} yaitu gambaran yang menceritakan jalannya sistem yang dibuat secara singkat. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dari aplikasi telah didapatkan.
 	
 	
 
 	\item \textit{Design}
 	
-	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram yang ditunjukkan pada Gambar \ref{usecase} untuk setiap aktor dan storyboard. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
-	\newpage
-	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Adapun beberapa contoh desain tampilan antarmuka dari aplikasi yang akan dirancang seperti Gambar \ref{appPangkalan} dan Gambar \ref{appAgen}.
+	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram untuk setiap aktor dan storyboard dan juga membuat \textit{deployment diagram} seperti pada gambar \ref{deployment}. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
+	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Tahap ini dianggap telah selesai apabila telah menghasilkan sebuah desain rancangan aplikasi dalam bentuk use-case diagram dan deployment diagram, dan model diagram lainnya.
 	
 	\vspace{-0.4cm}
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 12cm, height= 11cm]{gambar/use-case}
-		\caption{Diagram Use-Case}
-		\label{usecase}
+		\includegraphics [width = 16cm]{gambar/deployment}
+		\caption{Diagram Deployment}
+		\label{deployment}
 	\end{figure}
 	
-	
-	\begin{figure}[H]
-		\center
-		\begin{subfigure}[t]{6cm}
-			\center
-		\includegraphics [width = 6cm]{gambar/and/login}
-		\caption{Halaman Login}\label{login}		
-		\end{subfigure}\hspace{0.3cm}
-		\begin{subfigure}[t]{6cm}
-			\center
-			\includegraphics [width = 6cm]{gambar/and/beranda}
-			\caption{Menu Utama}\label{beranda}		
-		\end{subfigure}\vspace{0.3cm}
-		\begin{subfigure}[t]{6cm}
-			\center
-			\includegraphics [width = 6cm]{gambar/and/pembelian}
-			\caption{Halaman Pembelian Tabung}\label{pembelian}		
-		\end{subfigure}\hspace{0.3cm}
-		\begin{subfigure}[t]{6cm}
-			\center
-			\includegraphics [width = 6cm]{gambar/and/registrasi}
-			\caption{Halaman Registrasi}\label{registrasi}		
-		\end{subfigure}
-		\caption{Tampilan aplikasi untuk pangkalan gas LPG }\label{appPangkalan}
-	\end{figure}
-
-	\begin{figure}[H]
-		\center
-		\begin{subfigure}[t]{7cm}
-			\center
-			\includegraphics [width = 7cm]{gambar/web/login}
-			\caption{Halaman Login}\label{login}		
-		\end{subfigure}\hspace{0.2cm}
-		\begin{subfigure}[t]{7cm}
-			\center
-			\includegraphics [width = 7cm]{gambar/web/dashboard}
-			\caption{Menu Utama}\label{beranda}		
-		\end{subfigure}
-		\caption{Tampilan aplikasi untuk agen gas LPG }\label{appAgen}
-	\end{figure}
 
 	
 	\item \textit{Coding}
 	
-	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java.
+	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dan non-fungsional telah diselesaikan.
 
+	\newpage
 	 \item \textit{Testing}
 	
 	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:
 	\begin{enumerate}[a.]
 			\itemsep0em
 			\item \textit{Usability}
-			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda.
+			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda. SUS terdiri dari 10
+			pertanyaan dengan menggunakan skala dari 1 sampai 5. Skor akhir dari pengujian. SUS akan berada pada kisaran 0-100 \%. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan akseptabilitas desain sistem aplikasi yang dikembangkan. Penilaiannya berdasarkan tiga kategori yaitu \textit{Tidak Dapat Diterima} dengan rentang skor SUS 0-50.9 \%, \textit{Marginal} 51-70.9 \%, dan \textit{Dapat Diterima} 71-100 \%.
+			
 			\item \textit{Unit Testing}
 			\newline Unit testing fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak.
 		
 	\end{enumerate}
+	
+	\par Tahap ini dapat dilakukan setelah ataupun berdampingan dengan tahap \textit{coding}. Tahap ini dianggap telah selesai apabila semua pengujian yang telah dikerjakan menghasilkan nilai dengan skala tertentu
 	
 	
 \end{enumerate}
