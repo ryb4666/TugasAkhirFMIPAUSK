@@ -41,7 +41,7 @@ Alat yang digunakan pada penelitian ini adalah sebagai berikut :
 	\begin{itemize}
 		\item Visual Studio Code
 		\item Cordova 7.0.0
-		\item Ionic Framework 3
+		\item Ionic Framework 4
 		\item SDK Android 27.0.1
 	\end{itemize}
 \end{enumerate}
@@ -92,21 +92,12 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram untuk setiap aktor dan storyboard dan juga membuat \textit{deployment diagram} seperti pada gambar \ref{deployment}. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
 	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Tahap ini dianggap telah selesai apabila telah menghasilkan sebuah desain rancangan aplikasi dalam bentuk use-case diagram dan deployment diagram, dan model diagram lainnya.
 	
-	\vspace{-0.4cm}
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 16cm]{gambar/deployment}
-		\caption{Diagram Deployment}
-		\label{deployment}
-	\end{figure}
-	
 
 	
 	\item \textit{Coding}
 	
 	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dan non-fungsional telah diselesaikan.
 
-	\newpage
 	 \item \textit{Testing}
 	
 	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:
@@ -114,7 +105,25 @@ Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yait
 			\itemsep0em
 			\item \textit{Usability}
 			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda. SUS terdiri dari 10
-			pertanyaan dengan menggunakan skala dari 1 sampai 5. Skor akhir dari pengujian. SUS akan berada pada kisaran 0-100 \%. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan akseptabilitas desain sistem aplikasi yang dikembangkan. Penilaiannya berdasarkan tiga kategori yaitu \textit{Tidak Dapat Diterima} dengan rentang skor SUS 0-50.9 \%, \textit{Marginal} 51-70.9 \%, dan \textit{Dapat Diterima} 71-100 \%.
+			pertanyaan dengan menggunakan skala dari 1 sampai 5. Skor akhir dari pengujian. SUS akan berada pada kisaran 0-100 \%. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan akseptabilitas desain sistem aplikasi yang dikembangkan. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan interpretasi desain sistem aplikasi yang dikembangkan. Berikut
+			nilai interpretasi yang digunakan :
+			
+								\begin{table}[H]
+								\center
+								\caption{Skor Interpretasi.}
+								\label{nilaiInterpretasi}
+								\begin{tabular}{|l|l|}
+									\cline{1-2}
+									\multicolumn{2}{|c|}{\textbf{Interpretasi Skor}}                                                        \\ \cline{1-2}
+									\multirow{2}{*}{\textbf{Persentase Pencapaian \%}} & \multirow{2}{*}{\textbf{Interpretasi}}          \\
+									&                                               \\ \hline
+									0-20                                                    &  Sangat tidak layak                           \\ \hline
+									21-40                                                   &  Tidak layak                                  \\ \hline                                          
+									41-60                                                   &  Cukup layak                                  \\ \hline                                          
+									61-80                                                   &  Layak                                  \\ \hline                                          
+									81-100                                                  &  Sangat layak                                  \\ \hline                                          
+								\end{tabular}
+							\end{table}
 			
 			\item \textit{Unit Testing}
 			\newline Unit testing fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak.
