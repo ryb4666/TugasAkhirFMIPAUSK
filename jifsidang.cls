@@ -20,7 +20,7 @@
 
 \setlength{\paperwidth}{210mm}
 \setlength{\paperheight}{297mm}
-\usepackage[a4paper,left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[a4paper,left=14cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 \usepackage{verbatim,enumerate}
 
 % Membantu penulisan notasi matematika terutama untuk dokumen dengan banyak rumus. it's me!
@@ -94,9 +94,7 @@
 %Define page numbering in the first chapter
 %------------------------------------------------------------
 \def\ps@chapterheading{%
-  \let\@evenhead\@empty\let\@oddhead\@empty
-  \def\@oddfoot{\hfil\thepage\hfil}%
-  \def\@evenfoot{\hfil\thepage\hfil}
+  
   }
 
 % it's me!  
@@ -139,7 +137,7 @@
     \ifnum \c@secnumdepth >\m@ne
         \large\bfseries \@chapapp\space \thechapter
         \par\nobreak
-        \vskip 5\p@
+        \vskip -0.2cm
     \fi
     \interlinepenalty\@M
     \large \bfseries #1\par\nobreak
@@ -154,11 +152,11 @@
 %                                   {\normalfont\normalsize\bfseries\centering}}
 \renewcommand{\section}{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
-                                   {2.3ex \@plus.2ex}%
+                                   {0.5ex \@plus.2ex}%
                                    {\normalfont\normalsize\bfseries}}
 \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
+                                     {0.5ex \@plus .2ex}%
                                      {\normalfont\normalsize\bfseries}}
 %\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\parindent}%
 %                                    {3.25ex \@plus1ex \@minus.2ex}%
@@ -190,10 +188,11 @@
 \def\nomenclaturename{DAFTAR SINGKATAN}%
 \def\abstractname{Abstrak}%
 \def\acknowledgmentname{HALAMAN PERSEMBAHAN}%
-\def\approvalname{PENGESAHAN}
+\def\approvalname{PENGESAHAN SIDANG SARJANA}
 \def\partname{BAGIAN}%
 \def\chaptername{BAB}%
 \def\appendixname{LAMPIRAN}%
+\def\listingsname{PROGRAM}%
 \def\refname{DAFTAR KEPUSTAKAAN}%
 \def\bibname{DAFTAR KEPUSTAKAAN}%
 \def\indexname{Indek}%
@@ -230,6 +229,8 @@
 \gdef\@city{Darussalam, Banda Aceh}
 \newcommand{\judul}[1]{\gdef\@judul{#1}}
 \newcommand{\@judul}{}
+\newcommand{\judulinggris}[1]{\gdef\@judulinggris{#1}}
+\newcommand{\@judulinggris}{}
 \newcommand{\fullname}[1]{\gdef\@fullname{#1}}
 \newcommand{\@fullname}{}
 \newcommand{\idnum}[1]{\gdef\@idnum{#1}}
@@ -254,10 +255,14 @@
 \newcommand{\@firstsupervisor}{}
 \newcommand{\secondsupervisor}[1]{\gdef\@secondsupervisor{#1}}
 \newcommand{\@secondsupervisor}{}
+\newcommand{\kajur}[1]{\gdef\@kajur{#1}}
+\newcommand{\@kajur}{}
 \newcommand{\firstnip}[1]{\gdef\@firstnip{#1}}
 \newcommand{\@firstnip}{}
 \newcommand{\secondnip}[1]{\gdef\@secondnip{#1}}
 \newcommand{\@secondnip}{}
+\newcommand{\kajurnip}[1]{\gdef\@kajurnip{#1}}
+\newcommand{\@kajurnip}{}
 
 
 %------------------------------------------------------------
@@ -303,57 +308,60 @@
 %------------------------------------------------------------
 \def\approvalpage{%
   \chapter*{\approvalname}%
-  \begin{center}
-  \begin{doublespace}
-	\vspace{0.5cm}
-        \MakeUppercase{\normalfont\bfseries\@judul}\par\nobreak
-    \vspace{1.0cm}
-	Oleh:
-	\vspace{-0.5cm}
-    \begin{singlespace}
-	\begin{compactitem}
-	\addtolength{\itemindent}{3cm}	
-		\setlength{\parsep}{0pt} 
-			\item[]{\makebox[2cm]{Nama\hfill} : \@fullname}
-			\item[]{\makebox[2cm]{NPM\hfill} : \@idnum}
-			\item[]{\makebox[2cm]{Jurusan\hfill} : \@dept}
-		\end{compactitem}
-	\end{singlespace}
-    \vspace{2.0cm}
-    %Telah disetujui dan disahkan\\
-    %pada tanggal \@approvaldate
-    %\vspace{1.0cm}
-	
-	Menyetujui:
-    \begin{singlespace}
-    \begin{tabular}{ccc}
-      Pembimbing I & & Pembimbing II \\
-      \vspace{0.5cm} & \vspace{0.5cm} & \vspace{0.5cm}\\
-      \textbf{\underline{\@firstsupervisor}}& &
-      \textbf{\underline{\@secondsupervisor}} \\
-      \bfseries NIP. \@firstnip & & \bfseries NIP. \@secondnip    
-    \end{tabular}
-    \end{singlespace}
-	\vspace{2.0cm}
-	
-	% Mengetahui dekan dan kajur informatika
-	Mengetahui:\\
-	\begin{singlespace}
-	\begin{tabular}{ccc}
-	Dekan Fakultas MIPA & & 
-	Ketua Jurusan Informatika FMIPA \\
-	\vspace{0.6cm} Universitas Syiah Kuala, & \vspace{0.6cm} & \vspace{0.6cm} Universitas Syiah Kuala,\\
-	\textbf{\underline{Dr. Teuku Mohamad Iqbalsyah, S.Si, M.Sc. }}& &
-    \textbf{\underline{Dr. Muhammad Subianto, S.Si, M.Si }} \\ 
-	\bfseries{ NIP. 197110101997031003} & & \bfseries{ NIP. 196812111994031005}
+\begin{center}
+	\begin{doublespace}
+		\vspace{0.5cm}
+		\fontsize{12pt}{10pt}\selectfont\MakeUppercase{\Large{\bfseries\@judul}}\par\nobreak
+		%\MakeUppercase{\normalfont\bfseries\@judul}\par\nobreak
+		\vspace{1.0cm}
+		\fontsize{12pt}{10pt}\selectfont\MakeUppercase{\Large{\bfseries\@judulinggris}}\par\nobreak
+		\vspace{1.0cm}
+		Oleh:
+		\vspace{-0.5cm}
+		\begin{singlespace}
+			\begin{compactitem}
+				\addtolength{\itemindent}{3cm}	
+				\setlength{\parsep}{0pt} 
+				\item[]{\makebox[2cm]{Nama\hfill} : \@fullname}
+				\item[]{\makebox[2cm]{NPM\hfill} : \@idnum}
+				\item[]{\makebox[2cm]{Jurusan\hfill} : \@dept}
+			\end{compactitem}
+		\end{singlespace}
+		\vspace{2.0cm}
+		%Telah disetujui dan disahkan\\
+		%pada tanggal \@approvaldate
+		%\vspace{1.0cm}
+		
+		Menyetujui:
+	\end{doublespace}
+\end{center}
+\begin{singlespace}	
+	\begin{tabular}{lll}
+		Pembimbing I & \hspace{3cm}  & Pembimbing II \\
+		\vspace{0.5cm} & \vspace{0.5cm} & \vspace{0.5cm}\\
+		\underline{\@firstsupervisor}& &
+		\underline{\@secondsupervisor} \\
+		NIP. \@firstnip & &  NIP. \@secondnip    
 	\end{tabular}
-	\end{singlespace}
-	
-  \end{doublespace}
+\end{singlespace}
+\vspace{2.0cm}
+
+% Tanpa mengetahui dekan
+\begin{center}
+	\begin{doublespace}	
+		Mengetahui:\\
+		\begin{singlespace}
+			Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
+			\vspace{2.0cm}
+			\underline{\@kajur}\\
+			NIP. \@kajurnip 
+		\end{singlespace}
+	\end{doublespace}
+\end{center}
   
   \vspace{2.0cm}
-  Lulus Sidang Sarjana pada hari \@approvaldate
-  \end{center}
+%  Lulus Seminar Proposal pada hari \@approvaldate
+%  \end{center}
 \addcontentsline{toc}{chapter}{\approvalname}
 }
 
