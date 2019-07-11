@@ -229,6 +229,8 @@
 \gdef\@city{Darussalam, Banda Aceh}
 \newcommand{\judul}[1]{\gdef\@judul{#1}}
 \newcommand{\@judul}{}
+\newcommand{\judulinggris}[1]{\gdef\@judulinggris{#1}}
+\newcommand{\@judulinggris}{}
 \newcommand{\fullname}[1]{\gdef\@fullname{#1}}
 \newcommand{\@fullname}{}
 \newcommand{\idnum}[1]{\gdef\@idnum{#1}}
@@ -311,6 +313,8 @@
 		\vspace{0.5cm}
 		\fontsize{12pt}{10pt}\selectfont\MakeUppercase{\Large{\bfseries\@judul}}\par\nobreak
 		%\MakeUppercase{\normalfont\bfseries\@judul}\par\nobreak
+		\vspace{1.0cm}
+		\fontsize{12pt}{10pt}\selectfont\MakeUppercase{\Large{\bfseries\@judulinggris}}\par\nobreak
 		\vspace{1.0cm}
 		Oleh:
 		\vspace{-0.5cm}

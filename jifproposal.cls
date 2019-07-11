@@ -136,7 +136,7 @@
     \ifnum \c@secnumdepth >\m@ne
         \large\bfseries \@chapapp\space \thechapter
         \par\nobreak
-        \vskip 5\p@
+        \vskip -0.2cm
     \fi
     \interlinepenalty\@M
     \large \bfseries #1\par\nobreak

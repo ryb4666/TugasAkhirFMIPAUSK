@@ -6,7 +6,24 @@
 \chapter{METODOLOGI PENELITIAN}
 
 \section{Tempat dan Waktu Penelitian}
-\setlength\parindent{30pt} Penelitian ini dilakukan di Laboratorium Pemrograman dan Database (PDB), Jurusan Informatika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Syiah Kuala, Darussalam, Banda Aceh. Estimasi waktu yang dibutuhkan untuk penelitian ini terhitung dari bulan Februari 2018 sampai dengan bulan Agustus 2018.
+\setlength\parindent{30pt} Penelitian ini dilakukan di Jurusan Informatika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Syiah Kuala Banda Aceh. Waktu yang diperlukan untuk melakukan penelitian ini kurang lebih selama lima bulan, yang dimulai dari bulan Februari 2019 sampai bulan Juli 2019.
+
+% Please remember to add \use{multirow} to your document preamble in order to suppor multirow cells
+\begin{table}[H]
+	\center
+	\caption{Jadwal Penelitian.}
+	\label{jadwal}
+	\begin{tabular}{|c|l|l|l|l|l|l|l|}
+		\hline
+		\multirow{2}{*}{No} & \multirow{2}{*}{Keterangan} 	& \multicolumn{6}{c|}{Bulan}           																										\\ \cline{3-8} 
+							&                           	& Feb				& Mar  			& Apr			& Mei			& Jun			& Jul 					\\ \hline       
+		1                   & Studi literatur           	&\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                   &                       	\\ \hline
+		2                   & Penulisan Proposal           	&                   &\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                        	\\ \hline
+		3                   & Pengembangan Aplikasi         &                   &                   & \cellcolor{gray}  & \cellcolor{gray} 	& \cellcolor{gray}  &                            \\ \hline
+		4                   & Evaluasi Sistem               &                   &                   &           		&             		&\cellcolor{gray}	&  \cellcolor{gray}    \\ \hline
+		5                   & Penulisan Laporan Akhir       &                   &                   &                   &        			&      				& \cellcolor{gray}     \\ \hline
+	\end{tabular}
+\end{table}
 
 \section{Alat dan Bahan}
 Alat yang digunakan pada penelitian ini adalah sebagai berikut :
@@ -14,166 +31,108 @@ Alat yang digunakan pada penelitian ini adalah sebagai berikut :
 \begin{enumerate}[a.]
 \item Perangkat Keras (\textit{Hardware})
 	\begin{itemize}
-		\item 1 unit Laptop HP Intel(R) Core(TM) i3
-		\item RAM 6 GB DDR3
-		\item Harddisk 500 GB
-		\item 1 unit Android Xiaomi Redmi 4A RAM 2GB
+		\item 1 unit Laptop ASUS ROG Intel(R) Core(TM) i7 6700HQ
+		\item RAM 8 GB DDR3
+		\item Harddisk 1 TB
+		\item 1 unit Android Samsung S7
 	\end{itemize}
 
 \item Perangkat Lunak (\textit{Software})
 	\begin{itemize}
-		\item Sistem Operasi Windows 10
-		\item XAMPP versi 5.6.30
-		\item Apache Tomcat 7.0.56
-		\item Sublime Text versi 3
-		\item Android Studio versi 3.0.1
-		\item IntelliJ IDEA 2018.1.1
-
+		\item Visual Studio Code
+		\item Cordova 7.0.0
+		\item Ionic Framework 4
+		\item SDK Android 27.0.1
 	\end{itemize}
 \end{enumerate}
 
-\section{Metode Kerja}
-Metode kerja yang akan dilakukan pada penelitian ini dapat dilihat pada gambar 3.1. Berikut penjelasan alur metode kerja yang akan dilakukan.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/alur}
-		\caption{Alur diagram metode kerja}
-		\label{alur}
-	\end{figure}
+\section{Metode Penelitian}
+Skema dari alur tahapan penelitian dapat dilihat pada Gambar \ref{alur}
+\vspace{-0.4cm}
+\begin{figure}[H]
+	\center
+	\includegraphics [width = 6cm, height= 10cm]{gambar/alur2}
+	\caption{Diagram Alir Penelitian}
+	\label{alur}
+\end{figure}
 
-\subsection{Metode Pengumpulan Data}
-Metode pengumpulan data pada penelitian ini ada tiga yaitu:
-\begin{enumerate}[a.]
-	\item Observasi, dilakukan dengan melihat langsung media promosi yang dilakukan oleh pemilik kos, yaitu pamplet, brosur, \textit{broadcast} aplikasi \textit{chatting}. Melihat informasi apa saja yang tertera pada media promosi tersebut.
-	\item Studi literatur, tahap ini adalah tahap pengumpulan data dengan cara membaca dan mempelajari literatur yang berhubungan dengan penelitian ini seperti Android, \textit{web service}, pengembangan aplikasi, kode QR, pengujian aplikasi, analisa kebutuhan, \textit{problem frames}, OCL dan lain-lain.
-	\item Wawancara, metode ini dilakukan dengan cara mewawancarai \textit{user} yaitu pencari kos dan pemilik kos yang berhubungan dengan mencari dan menyediakan kos. Hal ini dilakukan untuk mendapatkan kebutuhan terhadap aplikasi yang akan dibangun. 
-\end{enumerate}
+\subsection{Analisis Permasalahan}
+Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pangkalan gas LPG Subsidi 3 Kg dalam melakukan pelaporan penyaluran tabung gas subsidi. Aplikasi ini juga membantu agen gas LPG selaku distributor dan pengawasan dari pangkalan gas untuk melakukan rekap laporan penyaluran tabung gas 3 Kg. Aplikasi ini melakukan pelaporan penyaluran tabung gas subsidi dengan menggunakan NIK(Nomor Induk Kependudukan) dan no telepon sebagai data acuan yang valid. Setelah itu data tersebut langsung di kirim langsung ke agen gas LPG bersangkutan. Adapun fitur-fitur yang terdapat pada aplikasi ini adalah sebagai berikut
+\begin{itemize}
+		\itemsep0em
+		\item Masuk ke dalam aplikasi.
+		\item Mencatat penjualan tabung gas menggunakan NIK sebagai acuan.
+		\item Melihat histori pembelian gas konsumen.
+		\item Melihat foto konsumen yang membeli gas
+		\item Mengubah profile biodata user.
+\end{itemize}
 
-\subsection{Perancangan Sistem}
-Perancangan aplikasi pencarian kos-kosan ini adalah dengan menggunakan metode \textit{Agile Software Development} jenis \textit{eXtreme Programming} (XP). Tahapan dari \textit{eXtreme Programming} (XP) adalah sebagai berikut:
+\subsection{Studi Literatur}
+Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dengan meneliti aplikasi atau perangkat lunak yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
 
-\begin{enumerate}[a.]
-\item \textit{Planning} (Perencanaan)
+\subsection{Pengumpulan Data}
+Data yang digunakan dalam penelitian ini adalah data penyaluran tabung ke masyarakat dan format pelaporan yang dipakai oleh pangkalan. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian. Pada tahap pengembangan ini, akan menghasilkan luaran-luaran seperti :
+	\begin{itemize}
+		\item Menjelaskan lebih detail mengenai bagaimana alur penyaluran gas LPG 3 Kg dari agen gas LPG sampai ke konsumen.
+		\item Menjelaskan secara detail bagaimana format pelaporan yang dipakai agen gas untuk memantau penyaluran gas LPG 3 Kg.
+	\end{itemize}
 
-Tahap perencanaan ini dimulai dengan mengumpulkan kebutuhan-kebutuhan untuk aplikasi yang akan dikembangkan dalam bentuk cerita (\textit{user stories}). \textit{User stories} menggambarkan keluaran yang diperlukan, fitur-fitur dan fungsionalitas-fungsionalitas aplikasi.  Untuk mendapatkan \textit{user stories}, maka akan dilakukan wawancara kepada \textit{user} atau orang yang akan menggunakan aplikasi ini. \textit{User} yang akan diwawancara adalah pemilik kos dan mahasiswa sebagai pencari kos atau anak kos. Pencarian \textit{user} dilakukan dengan cara mendatangi beberapa kos yang tersebar di daerah Banda Aceh. 
-	
-Langkah selanjutnya adalah menganalisa kebutuhan yaitu mendeskripsikan masalah dengan menjabarkan \textit{requirement}, \textit{domain knowledge}, dan mengidentifikasikan domain yang relevan dan \textit{share phenomena}. Setelah masalah sudah terkumpul, kemudian masalah tersebut akan dibagi ke dalam sub masalah dengan cara mengidentifikasikan kebutuhan-kebutuhan yang saling berkaitan. Sub masalah ini akan dicocokkan ke dalam \textit{problem frames} yang dinyatakan dalam \textit{frame diagrams}. Setelah mendapatkan \textit{frame diagrams}, akan dianalisa lagi menggunakan UML diagram kelas dan notasi spesifikasi formal OCL.
-	
-\item \textit{Design} (Perancangan)
-	
-Tahap perancangan akan dimulai dari merancang basis data dan \textit{interface} aplikasi. Basis data digunakan untuk menyimpan data kos-kosan yang di\textit{input} oleh pemilik kos. Aplikasi yang dibangun dibagi menjadi 2 bagian, yaitu web untuk pemilik kos dan Android untuk pencari kos. Berikut adalah \textit{mockup} aplikasi yang akan dibuat untuk pencari kos:
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\linewidth]{gambar/and1}
-		\caption{Tampilan utama aplikasi Android (kiri) dan tampilan QR Code Reader jika menekan tombol Scan QR Code pada tampilan utama (kanan)}
-		\label{android1}
-	\end{figure}
-	
-Gambar \ref{android1} adalah ketika menekan tombol \textit{Scan QR Code}, akan menampilkan kamera yang digunakan untuk memindai kode QR. Jika kode QR dapat dibaca, maka akan menampilkan informasi mengenai kos yang memiliki kode QR tersebut.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\linewidth]{gambar/and2}
-		\caption{Tampilan halaman jika menekan tombol Cari dan Lihat Semua Kos}
-		\label{android2}
-	\end{figure}
-	
-Gambar \ref{android2} adalah tombol Lihat Semua Kos yang akan menghasilkan halaman seluruh daftar kos-kosan yang ada dalam \textit{database}, tetapi tombol Cari akan menghasilkan daftar kos sesuai \textit{input} dari pengguna berdasarkan jenis, wilayah, fasilitas dan harga kos.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\linewidth]{gambar/and3}
-		\caption{Tampilan halaman jika menekan salah satu kos yang dicari}
-		\label{android3}
-	\end{figure}
-	
-Gambar \ref{android3} adalah halama dimana jika salah satu kos diklik, maka akan menampilkan halaman berupa informasi mengenai kos tersebut. 
+\subsection{Perancangan dan Pembuatan Sistem}
+Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yaitu Scrum. Metode Scrum sangat fleksibel terhadap perubahan-perubahan sehingga cocok digunakan pada aplikasi ini. Berikut merupakan tahapan perancangan sistem yang akan dilakukan:
 
-Sedangkan \textit{mockup} aplikasi web untuk pemilik kos adalah sebagai berikut:
+\begin{enumerate}[1.]
+	\item \emph {Planning}
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web2}
-		\caption{Tampilan halaman daftar akun kos}
-		\label{webb2}
-	\end{figure}
+	Pada tahap ini dilakukan analisa terhadap masalah yang terjadi di lapangan dalam penelitian ini yaitu pangkalan gas LPG 3 Kg dan mencari solusi yang akan memecahkan masalah tersebut dengan mengembangkan suatu sistem. Setelah itu dilakukan tahap inisiasi awal pengembangan sistem yaitu melakukan analisis kebutuhan pada setiap pengguna sistem yaitu Agen dan Pangkalan Gas LPG yang dilanjutkan dengan membuat \textit{storyboard} yaitu gambaran yang menceritakan jalannya sistem yang dibuat secara singkat. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dari aplikasi telah didapatkan.
 	
-Gambar \ref{webb2} adalah halaman daftar bagi pemilik kos-kosan yang ingin mempromosikan kos miliknya. Jika menekan 'Sudah punya akun?', maka akan muncul halaman seperti pada gambar \ref{webb1}.
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web1}
-		\caption{Tampilan halaman \textit{login} akun kos}
-		\label{webb1}
-	\end{figure}
-	
-Halaman \textit{login} pemilik kos. Setelah klik tombol \textit{Login}, akan menampilkan halaman seperti pada gambar \ref{webb3}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web3}
-		\caption{Tampilan halaman profil akun kos}
-		\label{webb3}
-	\end{figure}
-	
-Halaman profil ini akan menampilkan informasi pemilik kos yang terletak di sebelah kiri dan di sebelah kanan akan ditampilkan kos-kosan yang didaftarkan oleh pemilik kos. 
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web4}
-		\caption{Tampilan halaman tambah kos}
-		\label{webb4}
-	\end{figure}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web4a}
-		\caption{Tampilan halaman tambah kos}
-		\label{web4a}
-	\end{figure}
-	
-Gambar \ref{webb4} dan \ref{web4a} adalah halaman untuk menambahkan data kosan. Tombol Daftar Kos untuk menyimpan data kos yang dimilikinya. Pemilik kos harus mengisi informasi-informasi yang telah disediakan. Setelah menyimpan data kos, maka akan muncul halaman awal dengan kos yang sudah berhasil di-\textit{input}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web5}
-		\caption{Tampilan halaman profil akun kos yang sudah ada kos-kosan}
-		\label{webb5}
-	\end{figure}
-	
-Pada halaman seperti gambar \ref{webb5}, pemilik kos dapat melihat kos yang sudah diverifikasi atau belum bahkan semua kos yang di-\textit{input}. Data yang sudah di-\textit{input} dapat dilihat, diedit dan dihapus. Untuk tombol Lihat dan Edit, akan menuju halaman seperti gambar \ref{webb4} dan gambar \ref{web4a}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web7}
-		\caption{Tampilan halaman jika menekan tombol Hapus pada salah satu kos}
-		\label{webb7}
-	\end{figure}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web8}
-		\caption{Tampilan halaman edit profil}
-		\label{webb8}
-	\end{figure}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{gambar/web6}
-		\caption{Tampilan halaman ubah password}
-		\label{webb6}
-	\end{figure}
 
-	Pemilik kos juga dapat menghapus kos, edit profil dan mengubah password seperti pada gambar \ref{webb7}, \ref{webb8} dan \ref{webb6}.
+	\item \textit{Design}
 	
-	\item \textit{Coding} (Pengkodean)
+	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram untuk setiap aktor dan storyboard dan juga membuat \textit{deployment diagram} seperti pada gambar \ref{deployment}. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
+	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Tahap ini dianggap telah selesai apabila telah menghasilkan sebuah desain rancangan aplikasi dalam bentuk use-case diagram dan deployment diagram, dan model diagram lainnya.
 	
-Selanjutnya akan dilakukan penulisan program, pada penelitian ini menggunakan dua aplikasi yaitu web dan Android dan menggunakan \textit{web service} sebagai penghubung antara \textit{database }dan aplikasi Android. Pembuatan aplikasi web menggunakan \textit{framework} Laravel dan bahasa pemrograman PHP dan \textit{database} yang digunakan MySql. Untuk Android menggunakan bahasa pemrograman Java. Sedangkan \textit{web service} menggunakan RESTful API dengan \textit{framework} Jersey. Penulisan program ini akan membutuhkan PC untuk membuat aplikasi web dan menjalankan aplikasi Android Studio untuk membuat aplikasi \textit{mobile} serta \textit{smartphone} yang digunakan sebagai emulator Android Studio. 
+
 	
-	\item \textit{Testing} (Pengujian)
+	\item \textit{Coding}
 	
-Pengujian yang dilakukan adalah pengujian \textit{usability} dengan metode \textit{System Usability Scale} (SUS). Pengujian ini dilakukan oleh pengguna akhir dari aplikasi yang akan dibangun. Hal ini bertujuan untuk mengetahui tingkat penerimaan pengguna, apakah aplikasi ini dapat diterima oleh pengguna atau tidak. Pengujian ini dilakukan kepada dua kelompok pengguna, yaitu pemilik kos dan pencari kos. Metode SUS dapat digunakan untuk mengukur kegunaan (\textit{usability}) dari suatu sistem dengan sampel yang kecil yaitu 2 pengguna \citep{brook1996}. Namun pada penelitian ini sampel yang digunakan adalah 30 pengguna per kelompok pengguna agar mendapatkan data yang lebih akurat.
+	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dan non-fungsional telah diselesaikan.
+
+	 \item \textit{Testing}
+	
+	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:
+	\begin{enumerate}[a.]
+			\itemsep0em
+			\item \textit{Usability}
+			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda. SUS terdiri dari 10
+			pertanyaan dengan menggunakan skala dari 1 sampai 5. Skor akhir dari pengujian. SUS akan berada pada kisaran 0-100 \%. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan akseptabilitas desain sistem aplikasi yang dikembangkan. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan interpretasi desain sistem aplikasi yang dikembangkan. Berikut
+			nilai interpretasi yang digunakan :
+			
+								\begin{table}[H]
+								\center
+								\caption{Skor Interpretasi.}
+								\label{nilaiInterpretasi}
+								\begin{tabular}{|l|l|}
+									\cline{1-2}
+									\multicolumn{2}{|c|}{\textbf{Interpretasi Skor}}                                                        \\ \cline{1-2}
+									\multirow{2}{*}{\textbf{Persentase Pencapaian \%}} & \multirow{2}{*}{\textbf{Interpretasi}}          \\
+									&                                               \\ \hline
+									0-20                                                    &  Sangat tidak layak                           \\ \hline
+									21-40                                                   &  Tidak layak                                  \\ \hline                                          
+									41-60                                                   &  Cukup layak                                  \\ \hline                                          
+									61-80                                                   &  Layak                                  \\ \hline                                          
+									81-100                                                  &  Sangat layak                                  \\ \hline                                          
+								\end{tabular}
+							\end{table}
+			
+			\item \textit{Unit Testing}
+			\newline Unit testing fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak.
+		
+	\end{enumerate}
+	
+	\par Tahap ini dapat dilakukan setelah ataupun berdampingan dengan tahap \textit{coding}. Tahap ini dianggap telah selesai apabila semua pengujian yang telah dikerjakan menghasilkan nilai dengan skala tertentu
+	
+	
 \end{enumerate}
 
 
