@@ -17,7 +17,7 @@
 		 		\newline Pengguna yang menggunakan aplikasi berbasis android untuk melakukan pencatatan penjualan tabung per hari, mendaftarkan pelanggan baru, melakukan verifikasi pada penerimaan pasokan tabung.
 		 \end{enumerate}
 	 
-	 Persona untuk masing-masing kelompok pengguna dapat dilihat pada lampiran 1
+	 Persona untuk masing-masing kelompok pengguna yang terdiri dari agen gas dan pangkalan gas. Detailnya dapat dilihat pada lampiran 1
 	
 	\subsection{Storyboard}
 	Dengan menggunakan \textit{Storyboard} kita dapat memetakan secara visual kegiatan pengguna sebelum dan sesudah menggunakan aplikasi. Berdasarkan hasil pengamatan dan analisis kebutuhan dapat digambarkan \textit{Storyboard} seperti berikut:
@@ -29,7 +29,7 @@
 		\caption{Kegiatan Sebelum Menggunakan Aplikasi}
 		\label{storyboardOld1}
 	\end{figure}
-	
+	\vspace{-0.6cm}
 	\begin{figure}[H]
 		\center
 		\includegraphics [width = 14cm]{gambar/storyboard/storyboard-1-(new)}
@@ -83,21 +83,13 @@
 	\vspace{-0.4cm}
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 14cm]{gambar/model/component}
+		\includegraphics [width = 12cm]{gambar/model/component}
 		\caption{Diagram Component}
 		\label{component}
 	\end{figure}
 
-	\pagebreak
-	\par Dilanjutkan dengan tahap perancangan model basis data menggunakan \textit{class diagram}. diagram ini dibuat berdasarkan fungsionalitas dari sistem yang akan dibangun. Berikut rancangan \textit{class diagram} yang telah dibuat:
-	
-		\vspace{-0.4cm}
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 14cm]{gambar/model/class-diagram}
-		\caption{Diagram Kelas Model Basis Data }
-		\label{class}
-	\end{figure}
+	\newpage
+	\par Dilanjutkan dengan tahap perancangan model basis data menggunakan \textit{class diagram}. diagram ini dibuat berdasarkan fungsionalitas dari sistem yang akan dibangun. Rancangan dari \textit{class diagram} yang telah dibuat dapat dilihat pada Lampiran 7
 
 	\par Selanjutnya adalah perancangan layanan web, perancangan layanan web disini memiliki peran yang sangat penting dan vital, dimana layanan web harus dapat menangani setiap proses transaksi data yang dilakukan oleh sistem. layanan web ini menggunakan RESTful API untuk dapat berinteraksi dengan \textit{platform} android dan aplikasi lain melalui HTTP URL.
 	
@@ -108,46 +100,84 @@
 	
 	\vspace{-0.2cm}
 	\begin{figure}[H]
-		\center
-		\includegraphics [width = 7cm]{gambar/android/login}
-		\vspace{1cm}
-		\includegraphics [width = 7cm]{gambar/android/verify}
+		\centering
+		\begin{subfigure}[b]{0.4\linewidth}
+				\includegraphics [width = \linewidth]{gambar/android/login}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.4\linewidth}
+			\includegraphics [width = \linewidth]{gambar/android/verify}
+		\end{subfigure}
 		\caption{Tampilan Login aplikasi}
 		\label{tampilanLoginPangkalan}
 	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}[b]{0.4\linewidth}
+			\centering
+			\includegraphics [width = \linewidth, height=10cm]{gambar/android/beranda}
+			\captionof{figure}{Tampilan Halaman Beranda}
+			\label{tampilanBerandaPangkalan}
+		\end{minipage}
+		\begin{minipage}[b]{0.4\linewidth}
+			\centering
+			\includegraphics [width = \linewidth, height=10cm]{gambar/android/register}
+			\captionof{figure}{Tampilan Halaman Register Pelanggan}
+			\label{tampilanRegisterPangkalan}
+		\end{minipage}
+		
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}[b]{0.4\linewidth}
+			\centering
+			\includegraphics [width = \linewidth, height=10cm]{gambar/android/berkas-register}
+			\captionof{figure}{Tampilan Halaman Unggah Berkas}
+			\label{tampilanUnggahBerkas}
+		\end{minipage}
+		\begin{minipage}[b]{0.4\linewidth}
+			\centering
+			\includegraphics [width = \linewidth, height=10cm]{gambar/android/penerimaan}
+			\captionof{figure}{Tampilan Halaman Penerimaan Pasokan Tabung}
+			\label{tampilanPenerimaanPangkalan}
+		\end{minipage}
+		
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+			\begin{subfigure}[b]{0.43\linewidth}
+			\includegraphics [width = \linewidth]{gambar/android/cari-pelanggan}
+			\caption{Halaman Cari Pelanggan}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.43\linewidth}
+			\includegraphics [width = \linewidth]{gambar/android/detail-pelanggan}
+			\caption{Halaman Detail Pelanggan}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.43\linewidth}
+			\includegraphics [width = \linewidth]{gambar/android/foto-diri}
+			\caption{Berkas Foto Diri Pelanggan}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.43\linewidth}
+			\includegraphics [width = \linewidth]{gambar/android/foto-ktp}
+			\caption{Berkas Foto KTP Pelanggan}
+		\end{subfigure}
+	\end{figure}
+
+	\begin{figure}[H] \ContinuedFloat
+	\centering
+		\begin{subfigure}[b]{0.43\linewidth}
+		\includegraphics [width = \linewidth]{gambar/android/pilih-tabung}
+		\caption{Halaman Pilih Jumlah Tabung}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.43\linewidth}
+		\includegraphics [width = \linewidth]{gambar/android/bukti-pembelian}
+		\caption{Halaman Bukti Pembelian}
+	\end{subfigure}
 	
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 7cm]{gambar/android/beranda}
-		\caption{Tampilan Halaman Beranda}
-		\label{tampilanBerandaPangkalan}
-	\end{figure}
-
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 6cm]{gambar/android/register}
-		\caption{Tampilan Halaman Register Pelanggan}
-		\label{tampilanRegisterPangkalan}
-	\end{figure}
-
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 6cm]{gambar/android/penerimaan}
-		\caption{Tampilan Halaman Penerimaan Pasokan Tabung}
-		\label{tampilanPenerimaanPangkalan}
-	\end{figure}
-
-	\begin{figure}[H]
-		\center
-		\includegraphics [width = 6cm]{gambar/android/cari-pelanggan}
-		\vspace{1cm}
-		\hspace{1cm}
-		\includegraphics [width = 6cm]{gambar/android/detail-pelanggan}
-		\includegraphics [width = 6cm]{gambar/android/pilih-tabung}
-		\hspace{1cm}
-		\includegraphics [width = 6cm]{gambar/android/bukti-pembelian}
-		\caption{Tampilan Halaman Pembelian Tabung}
-		\label{tampilanPembelianPangkalan}
+	\caption{Tampilan Halaman Pembelian Tabung}
+	\label{tampilanPembelianPangkalan}
 	\end{figure}
 
 	\par Tampilan Aplikasi berbasis web untuk agen gas LPG 3Kg ini terdiri dari 5 halaman utama yaitu halaman beranda, halaman pangkalan, halaman rencana pasokan tabung, halaman pembeli, dan halaman untuk melakukan ekspor laporan penyaluran.
@@ -157,35 +187,35 @@
 	
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 9cm]{gambar/web/login}
+		\includegraphics [width = 10cm]{gambar/web/login}
 		\caption{Tampilan Halaman Login untuk Agen Gas LPG 3Kg}
 		\label{tampilanLoginAgen}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 9cm]{gambar/web/beranda}
+		\includegraphics [width = 10cm]{gambar/web/beranda}
 		\caption{Tampilan Halaman Beranda untuk Agen Gas LPG 3Kg}
 		\label{tampilanBerandaAgen}
 	\end{figure}
 
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 9cm]{gambar/web/pangkalan}
+		\includegraphics [width = 10cm]{gambar/web/pangkalan}
 		\caption{Tampilan Halaman Daftar Pangkalan }
 		\label{tampilanDaftarPangkalanAgen}
 	\end{figure}
 
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 9cm]{gambar/web/penerimaan}
+		\includegraphics [width = 10cm]{gambar/web/penerimaan}
 		\caption{Tampilan Halaman Rencana Penerimaan Pasokan Tabung}
 		\label{tampilanPenerimaanAgen}
 	\end{figure}
 
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 9cm]{gambar/web/Laporan}
+		\includegraphics [width = 10cm]{gambar/web/Laporan}
 		\caption{Tampilan Halaman Ekspor Laporan}
 		\label{tampilanLaporanAgen}
 	\end{figure}
@@ -196,263 +226,10 @@
 	
 	\begin{enumerate}[a.]
 		\item Layanan Web
-		\\ Layanan web dikembangkan menggunakan bahasa pemrograman java dengan memanfaatkan pustaka Google Endpoints API untuk membangun sebuah layanan web yang memiliki prinsip RESTful API. dan juga menggunakan Google Datastore sebagai media penyimpanan basis data. Google Datastore merupakan layanan basis data NoSQL yang dibuat untuk penskalaan otomatis, kinerja tinggi, dan kemudahan dalam pengembangan aplikasi. Dikarenakan kita menggunakan Google Datastore sebagai Layanan penyimpanan basis data, kita akan menggunakan salah satu pustaka Java yang dimilikinya yaitu Objectify. Pada pembuatan layanan web (\textit{webservice}) hanya membutuhkan \textit{Model} Basis Data, \textit{Controller}, dan API. Pada pembuatan \textit{Model} basis data, desain basis datanya akan mengikuti dari desain \textit{class diagram} yang dibuat sebelumnya. tahap pembuatan layanan web yang pertama adalah membuat kelas \textit{Model} untuk masing-masing entitas seperti pada Gambar \ref{modelWebservice}. Setelah itu membuat kelas \textit{controller} yang akan menangani setiap operasi untuk memanipulasi data didalam \textit{Model} seperti pada Gambar \ref{controllerWebservice}. Tahap selanjutnya adalah membuat kelas API yang akan menangani pemanggilan setiap \textit{endpoint} yang layanan web seperti pada Gambar \ref{apiWebservice}. Setelah semua komponen telah selesai, maka akan dilakukan pengujian terhadap layanan web untuk mengetahui apakah setiap endpoint berjalan dengan seharusnya seperti pada Gambar \ref{pengujianApi}.
-		
-			\lstset{language=Java,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-	
-		\begin{lstlisting}[caption=Potongan kode \textit{model} basis data layanan web, label=modelWebservice]
-		@Entity
-		public class Penerimaan {
-		public Penerimaan(Date tanggal, Integer jmlTabung, Ref<Laporan> laporan, Ref<Pangkalan> pangkalan, Boolean statusVerifikasi) {
-		setTanggal(tanggal);
-		setJmlTabung(jmlTabung);
-		setLaporan(laporan);
-		setPangkalan(pangkalan);
-		setStatusVerifikasi(statusVerifikasi);
-		}
-		.......................................................................
-		@SuppressWarnings("unused")
-		private Penerimaan(){}
-		.......................................................................
-		/**
-		* kembalikan key dari pengguna.
-		* @return key dari laporan atau null jika entitas belum tersimpan
-		*/
-		public Key<Penerimaan> getKey() {
-		if(this.id == null)
-		return null;
-		
-		return Key.create(Penerimaan.class, this.id);
-		}
-		......................................................................
-		@Id 
-		private Long id;
-		public Long getId() {
-		return id;
-		}
-		......................................................................
-		@Index
-		private Date tanggal;
-		public Date getTanggal() {
-		return tanggal;
-		}
-		public void setTanggal(Date tanggal) {
-		if(tanggal == null)
-		throw new NullPointerException("Tanggal tidak boleh Null");
-		
-		this.tanggal = tanggal;
-		}
-		......................................................................
-		private Integer jmlTabung;
-		public Integer getJmlTabung() {
-		return jmlTabung;
-		}
-		public void setJmlTabung(Integer jmlTabung) {
-		if(jmlTabung == null)
-		throw new NullPointerException("Jml Tabung tidak boleh Null");
-		
-		if(jmlTabung < 0)
-		throw new NullPointerException("Jml Tabung tidak boleh Minus");
-		
-		this.jmlTabung = jmlTabung;
-		}
-		
-		\end{lstlisting}	
+		\\ Layanan web dikembangkan menggunakan bahasa pemrograman java dengan memanfaatkan pustaka Google Endpoints API untuk membangun sebuah layanan web yang memiliki prinsip RESTful API. dan juga menggunakan Google Datastore sebagai media penyimpanan basis data. Google Datastore merupakan layanan basis data NoSQL yang dibuat untuk penskalaan otomatis, kinerja tinggi, dan kemudahan dalam pengembangan aplikasi. Dikarenakan kita menggunakan Google Datastore sebagai Layanan penyimpanan basis data, kita akan menggunakan salah satu pustaka Java yang dimilikinya yaitu Objectify. Pada pembuatan layanan web (\textit{webservice}) hanya membutuhkan \textit{Model} Basis Data, \textit{Controller}, dan API. Pada pembuatan \textit{Model} basis data, desain basis datanya akan mengikuti dari desain \textit{class diagram} yang dibuat sebelumnya. tahap pembuatan layanan web yang pertama adalah membuat kelas \textit{Model} untuk masing-masing entitas seperti pada Gambar \ref{modelWebservice}. Setelah itu membuat kelas \textit{controller} yang akan menangani setiap operasi untuk memanipulasi data didalam \textit{Model} seperti pada Gambar \ref{controllerWebservice}. 
+		Tahap selanjutnya adalah membuat kelas API yang akan menangani pemanggilan setiap \textit{endpoint} yang layanan web seperti pada Gambar \ref{apiWebservice}. Setelah semua komponen telah selesai, maka akan dilakukan pengujian terhadap layanan web untuk mengetahui apakah setiap endpoint berjalan dengan seharusnya seperti pada Gambar \ref{pengujianApi}.
 		
 		
-		\begin{lstlisting}[caption=Potongan kode \textit{controller} layanan web, label=controllerWebservice]
-		public class PenerimaanAtur {
-			/**
-			* Tambah {@link Penerimaan} baru.
-			* 
-			* @param tanggal Tanggal {@link Penerimaan} baru.
-			* @param jmlTabung Jumlah Tabung dari {@link Penerimaan} baru.
-			* @param idPangkalan dari {@link Penerimaan} baru.
-			* @param idPelanggan Id Pelanggan dari {@link Penerimaan} baru.
-			*  
-			* @throws TidakDitemukanException 
-			* @throws StokTidakCukupException 
-			*/
-			
-			public Penerimaan baru(Date tanggal, Integer jmlTabung, Long idPangkalan) throws EntitasDuplikasiException, TidakDitemukanException, StokTidakCukupException {
-			Pangkalan pangkalan;
-			
-			
-			// Pastikan id pelanggan ada di entity penerimaan
-			try {
-			pangkalan = new PangkalanAtur().cari(idPangkalan);
-			} catch (TidakDitemukanException e) {
-			throw new TidakDitemukanException("Tidak ditemukan Pangkalan dengan id: '"+idPangkalan+"'");
-			}
-			
-			// Pastikan penerimaan tidak memiliki tanggal dan pangkalan yang sama
-			try {
-			new PenerimaanAtur().cariTanggalPangkalan(tanggal, pangkalan);
-			throw new EntitasDuplikasiException("telah ada penjualan dengan tanggal :"+tanggal+"dan pangkalan : "+pangkalan.getNamaPangkalan());
-			} catch (TidakDitemukanException e) {}
-			
-			
-			Ref<Pangkalan> refPangkalan = Ref.create(pangkalan);
-			
-			//tambah penerimaan dengan refLaporan null
-			Penerimaan penerimaan = new Penerimaan(tanggal, jmlTabung, null, refPangkalan, false);
-			ofy().save().entity(penerimaan).now();
-			
-			
-			return penerimaan;
-			}
-			
-			/**
-			* Cari {@link Penerimaan} dengan memakai key-nya.
-			* 
-			* @param key ID dari {@link Penerimaan} yang hendak dicari.
-			* 
-			* @return {@link Penerimaan} dengan key yang diberikan.
-			* 
-			* @throws TidakDitemukanException Jika {@link Penerimaan} dengan key yang diberikan tidak ditemukan.
-			*/
-			
-			public Penerimaan cari(Key<Penerimaan> key) throws TidakDitemukanException {
-			if (key == null)
-			throw new NullPointerException("Key dari Penerimaan yang hendak dicari tidak boleh null.");
-			
-			Penerimaan penerimaan = ofy().load().key(key).now();
-			if (penerimaan == null)
-			throw new TidakDitemukanException("Tidak ada penerimaan dengan id: '" + key.getId() + "'!");
-			
-			return penerimaan;
-			}
-		}
-		
-		\end{lstlisting}
-		
-			\begin{lstlisting}[caption=Potongan kode \textit{controller} layanan web, label=controllerWebservice]
-		public class PenerimaanAtur {
-		/**
-		* Tambah {@link Penerimaan} baru.
-		* 
-		* @param tanggal Tanggal {@link Penerimaan} baru.
-		* @param jmlTabung Jumlah Tabung dari {@link Penerimaan} baru.
-		* @param idPangkalan dari {@link Penerimaan} baru.
-		* @param idPelanggan Id Pelanggan dari {@link Penerimaan} baru.
-		*  
-		* @throws TidakDitemukanException 
-		* @throws StokTidakCukupException 
-		*/
-		
-		public Penerimaan baru(Date tanggal, Integer jmlTabung, Long idPangkalan) throws EntitasDuplikasiException, TidakDitemukanException, StokTidakCukupException {
-		Pangkalan pangkalan;
-		
-		
-		// Pastikan id pelanggan ada di entity penerimaan
-		try {
-		pangkalan = new PangkalanAtur().cari(idPangkalan);
-		} catch (TidakDitemukanException e) {
-		throw new TidakDitemukanException("Tidak ditemukan Pangkalan dengan id: '"+idPangkalan+"'");
-		}
-		
-		// Pastikan penerimaan tidak memiliki tanggal dan pangkalan yang sama
-		try {
-		new PenerimaanAtur().cariTanggalPangkalan(tanggal, pangkalan);
-		throw new EntitasDuplikasiException("telah ada penjualan dengan tanggal :"+tanggal+"dan pangkalan : "+pangkalan.getNamaPangkalan());
-		} catch (TidakDitemukanException e) {}
-		
-		
-		Ref<Pangkalan> refPangkalan = Ref.create(pangkalan);
-		
-		//tambah penerimaan dengan refLaporan null
-		Penerimaan penerimaan = new Penerimaan(tanggal, jmlTabung, null, refPangkalan, false);
-		ofy().save().entity(penerimaan).now();
-		
-		
-		return penerimaan;
-		}
-		
-		/**
-		* Cari {@link Penerimaan} dengan memakai key-nya.
-		* 
-		* @param key ID dari {@link Penerimaan} yang hendak dicari.
-		* 
-		* @return {@link Penerimaan} dengan key yang diberikan.
-		* 
-		* @throws TidakDitemukanException Jika {@link Penerimaan} dengan key yang diberikan tidak ditemukan.
-		*/
-		
-		public Penerimaan cari(Key<Penerimaan> key) throws TidakDitemukanException {
-		if (key == null)
-		throw new NullPointerException("Key dari Penerimaan yang hendak dicari tidak boleh null.");
-		
-		Penerimaan penerimaan = ofy().load().key(key).now();
-		if (penerimaan == null)
-		throw new TidakDitemukanException("Tidak ada penerimaan dengan id: '" + key.getId() + "'!");
-		
-		return penerimaan;
-		}
-		}
-		
-		\end{lstlisting}	
-		
-			\begin{lstlisting}[caption=Potongan kode API layanan web, label=apiWebservice]
-		@Api(name="penerimaan",
-		version="v1",
-		title = "Penerimaan",
-		description="API untuk Model Penerimaan. ",
-		apiKeyRequired=AnnotationBoolean.TRUE)
-		public class PenerimaanApi {
-		@ApiMethod(name = "daftar", httpMethod = HttpMethod.GET)
-		public List<PenerimaanJSON> daftar() {
-		
-		List<Penerimaan> daftar = new PenerimaanAtur().daftar();
-		List<PenerimaanJSON> daftarJSON = new ArrayList<PenerimaanJSON>();
-		
-		for(Penerimaan baris : daftar)
-		daftarJSON.add(new PenerimaanJSON(baris));
-		
-		return daftarJSON;
-		}
-		
-		@ApiMethod(name = "daftarByPangkalan", httpMethod = HttpMethod.POST)
-		public List<PenerimaanJSON> daftarByPangkalan(DaftarByPangkalanJSON params) throws TidakDitemukanException {
-		Pangkalan pangkalan = new PangkalanAtur().cari(params.idPangkalan);
-		List<Penerimaan> daftar = new PenerimaanAtur().daftarByPangkalan(pangkalan);
-		List<PenerimaanJSON> daftarJSON = new ArrayList<PenerimaanJSON>();
-		
-		for(Penerimaan baris : daftar) {
-		daftarJSON.add(new PenerimaanJSON(baris));
-		}
-		
-		return daftarJSON;
-		}
-		
-		@ApiMethod(name = "detail", httpMethod = HttpMethod.GET)
-		public PenerimaanJSON detail(@Named("idPenerimaan") Long idPenerimaan) throws BadRequestException, TidakDitemukanException {
-		
-		Penerimaan penerimaan = new PenerimaanAtur().cari(idPenerimaan);
-		
-		if(penerimaan==null || penerimaan.getKey() == null) {
-		throw new TidakDitemukanException("Tidak ada pangkalan dengan id: '" + idPenerimaan + "'!");
-		}
-		
-		return new PenerimaanJSON(penerimaan);
-		}
-		}
-		
-		\end{lstlisting}
 	
 		\begin{figure}[H]
 			\center
@@ -462,185 +239,10 @@
 		\end{figure} 
 		
 		\item Aplikasi Mobile
-		\\ Aplikasi berbasis \textit{android} dikembangkan menggunakan Ionic Framework yang menggunakan teknologi HTML, JavaScript dan CSS sebagai tampilan \textit{frontend} aplikasi. Pengembangan aplikasi ini mengikuti salah satu prinsip pembuatan aplikasi secara umum yaitu MVC (Model View Controller). Model (providers) berisi fungsi untuk masing-masing method HTTP yang dipanggil oleh aplikasi dari layanan web. \textit{Model} dibuat menggunakan Typescript. \textit{Model} berperan penting pada proses penarikan dan penginputan data ke Google Datastore. Contoh Kode model pada ionic dapat dilihat pada Gambar \ref{modelMobile}. \textit{View} berfungsi untuk mengatur tampilan aplikasi yang ditampilkan pada pengguna melalui HTML dan CSS. Contoh Kode view pada ionic dapat dilihat pada Gambar \ref{modelView}. \textit{Controller} untuk mengatur halaman yang ditampilkan kepada pengguna dan pemanggilan API. \\
+		\\ Aplikasi berbasis \textit{android} dikembangkan menggunakan Ionic Framework yang menggunakan teknologi HTML, JavaScript dan CSS sebagai tampilan \textit{frontend} aplikasi. Pengembangan aplikasi ini mengikuti salah satu prinsip pembuatan aplikasi secara umum yaitu MVC (Model View Controller). Model (providers) berisi fungsi untuk masing-masing method HTTP yang dipanggil oleh aplikasi dari layanan web. \textit{Model} dibuat menggunakan Typescript. \textit{Model} berperan penting pada proses penarikan dan penginputan data ke Google Datastore. Contoh Kode model pada ionic dapat dilihat pada Gambar \ref{modelMobile}. \textit{View} berfungsi untuk mengatur tampilan aplikasi yang ditampilkan pada pengguna melalui HTML dan CSS. Contoh Kode view pada ionic dapat dilihat pada Gambar \ref{viewMobile}. \textit{Controller} untuk mengatur halaman yang ditampilkan kepada pengguna dan pemanggilan API. \\
 		
 		\vspace{-0.4cm}
 		
-		\lstset{language=HTML,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-	
-		\begin{lstlisting}[caption=Potongan kode \textit{model} aplikasi berbasis android, label=modelMobile]
-		export class RestService {
-		apiUrl = 'https://gasapp-2018.appspot.com/_ah/api';
-		
-		constructor(public http: HttpClient) {
-		console.log('Hello RestProvider Provider');
-		}
-		
-		userAuthentication(phoneNumber) {
-		return new Promise((resolve, reject) => {
-		let headers = new HttpHeaders()
-		let data = {noHp:phoneNumber};
-		this.http.post(this.apiUrl+'/pangkalan/v1/auth', JSON.stringify(data), {headers: headers})
-		.subscribe(res => {
-		resolve(res);
-		}, (err) => {
-		reject(err);
-		});
-		});
-		}
-		
-		addPelanggan(data){
-		return new Promise((resolve, reject) => {
-		let headers = new HttpHeaders()
-		
-		this.http.post(this.apiUrl+'/pelanggan/v1/tambah', JSON.stringify(data), {headers: headers})
-		.subscribe(res => {
-		resolve(res);
-		}, (err) => {
-		reject(err);
-		});
-		});
-		}
-		
-		getPelanggan(nik, idPangkalan) {
-		return new Promise((resolve, reject) => {
-		let headers = new HttpHeaders()
-		let data = {nik:nik, idPangkalan:idPangkalan};
-		
-		this.http.post(this.apiUrl+'/pelanggan/v1/cariNik', JSON.stringify(data), {headers: headers}).subscribe(data => {
-		resolve(data);
-		}, (err) => {
-		console.log(err);
-		reject(err);
-		});
-		});
-		}
-		}
-		
-		\end{lstlisting}
-		
-		\begin{lstlisting}[caption=Potongan kode \textit{view} aplikasi berbasis android, label=viewMobile]
-			<ion-header translucent="true">
-			<ion-toolbar id="toolbar-home" style="padding-top:0">
-			<ion-title>
-			<ion-img [src]="logo" class="logo"></ion-img>
-			</ion-title>
-			<ion-buttons slot="start">
-			<ion-menu-button autoHide="false"></ion-menu-button>
-			</ion-buttons>
-			</ion-toolbar>
-			</ion-header>
-			
-			<ion-content fullscreen ion-padding color="light">
-			
-			<!-- <ion-slides pager=true [options]="slideOptions"> 
-			<ion-slide *ngFor="let slide of slides">
-			<ion-img [src]="slide" class="slide-image"></ion-img>
-			</ion-slide> 
-			</ion-slides> -->
-			<div class="wrap-cover parallax-obj">
-			<div class="bg-profile shadow-3">
-			<ion-row class="panel-stats">
-			<ion-col id="stok" size="6">
-			<ion-text color="light" class="stats">
-			<h4>Stok Tabung</h4>
-			<p>{{statistik.stokTabung}}</p>
-			</ion-text> 
-			</ion-col>
-			<ion-col id="hari" size="6">
-			<ion-text color="light" class="stats">
-			<h4>Terjual Hari Ini</h4>
-			<p>{{statistik.hariIni}}</p>
-			</ion-text> 
-			</ion-col>
-			<ion-col id="bulan" size="6">
-			<ion-text color="light" class="stats">
-			<h4>Terjual Bulan Ini</h4>
-			<p>{{statistik.bulanIni}}</p>
-			</ion-text> 
-			</ion-col>
-			<ion-col id="tahun" size="6">
-			<ion-text color="light" class="stats">
-			<h4>Terjual Tahun Ini</h4>
-			<p>{{statistik.tahunIni}}</p>
-			</ion-text> 
-			</ion-col>
-			</ion-row>
-			</div>
-			</div>
-		
-		\end{lstlisting}
-		
-		\begin{lstlisting}[caption=Potongan kode \textit{controller} aplikasi berbasis android, label=controllerMobile]
-		export class HomePage {
-		logo = 'assets/img/logoPutih.png';
-		
-		userData:any;
-		statistik = {
-		stokTabung: 0,
-		hariIni: 0,
-		bulanIni: 0,
-		tahunIni: 0
-		}
-		
-		constructor(
-		private route:ActivatedRoute,
-		private custom:CustomService,
-		private menu: MenuController,
-		private storage: Storage,
-		private restService: RestService
-		) {
-		if(this.route.snapshot.paramMap.has('flashdata')){
-		this.custom.showAlert("", this.route.snapshot.paramMap.get('flashdata'));
-		}
-		
-		this.storage.get("userData").then(res => {
-		this.userData = res;
-		
-		this.restService.statistikTabung(this.userData.idPangkalan).then(res => {
-		let data:any = res;
-		this.statistik.stokTabung = data.stokTabung;
-		this.statistik.hariIni = data.tabungTerjualHariIni;
-		this.statistik.bulanIni = data.tabungTerjualBulanIni;
-		this.statistik.tahunIni = data.tabungTerjualTahunIni;
-		})
-		console.log(this.userData);
-		this.menu.enable(true, 'menu');
-		this.menu.open('menu');
-		
-		}).catch(err => {
-		console.log(err);
-		});
-		
-		}
-		
-		ngOnInit() {
-		
-		}
-		
-		slideOptions = {
-		autoplay: {
-		delay: 5000,
-		}
-		};
-		}
-		
-		\end{lstlisting}
 		
 		 aplikasi ini juga menggunakan layanan Google Firebase untuk dapat melakukan proses login menggunakan nomor HP atau dinamakan dengan \textit{Phone Authentication} seperti pada Gambar \ref{firebaseAuth}
 		
@@ -654,282 +256,9 @@
 		\item Aplikasi Web
 		\\ Aplikasi berbasis \textit{web} dikembangkan menggunakan Bahasa pemrograman Java dengan menggunakan prinsip yang sama yaitu MVC (Model View Controller). dimana \textit{model} menggunakan pustaka HTTP untuk memanggil method HTTP pada layanan web dan pustaka GSON untuk melakukan proses konversi dari JSON ke dalam objek java. untuk \textit{view} menggunakan JSP (\textit{Java Server Page}) untuk menampilkan isi halaman \textit{web} yang akan dibangun. JSP memiliki struktur bahasa yang hampir sama dengan HTML (\textit{Hypertext Markup Language}). untuk \textit{controller} menggunakan pustaka HTTP Servlet untuk menangani permintaan HTTP URL dan mengatur pemanggilan \textit{view dan model}. Aplikasi ini nanti akan berjalan pada platform Google App Engine (GAE)\\
 		
-		\vspace{-0.4cm}
 		
-			\lstset{language=Java,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-	
-			\begin{lstlisting}[caption=Potongan kode \textit{model} aplikasi berbasis web, label=modelWeb]
-			public class PangkalanService extends AppService{
-				
-				private static final String baseUrl=AppService.getWebService();
-				
-				public ListPangkalanJson getPangkalan()
-				{
-				String restUrl = baseUrl+"/pangkalan/v1/daftar";
-				
-				String jsonString = getJsonString(restUrl);
-				ListPangkalanJson jsonObject = null;
-				
-				//Konversi json string ke class object
-				try{
-				Gson gson = new GsonBuilder().create();
-				jsonObject = gson.fromJson(jsonString, ListPangkalanJson.class);            
-				}
-				catch(JsonSyntaxException ex)
-				{
-				ex.printStackTrace();
-				}
-				
-				return jsonObject;
-				}
-				
-				public PangkalanJson getDetailPangkalan(Long idPangkalan)
-				{
-				String restUrl = baseUrl+"/pangkalan/v1/detail/"+idPangkalan;
-				
-				String jsonString = getJsonString(restUrl);
-				PangkalanJson jsonObject = null;
-				
-				//Konversi json string ke class object
-				try{
-				Gson gson = new GsonBuilder().create();
-				jsonObject = gson.fromJson(jsonString, PangkalanJson.class);            
-				}
-				catch(JsonSyntaxException ex)
-				{
-				ex.printStackTrace();
-				}
-				
-				return jsonObject;
-				}
-		}
-		
-		\end{lstlisting}
-		
-			\lstset{language=HTML,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-			\begin{lstlisting}[caption=Potongan kode \textit{view} aplikasi berbasis web, label=viewWeb]
-		 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-		<!-- Main content -->
-		<section class="content">
-		<!-- Small boxes (Stat box) -->
-		<div class="row">
-		<c:choose>
-		<c:when test="${sessionScope.userGroup == 'administrator'}">
-		<div class="col-lg-6 col-xs-6">
-		<!-- small box -->
-		<div class="small-box bg-aqua">
-		<div class="inner">
-		<h3>${jmlAgen}</h3>
-		<p>Jumlah Agen</p>
-		</div>
-		<div class="icon">
-		<i class="fa fa-user"></i>
-		</div>
-		<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-		</div>
-		</div><!-- ./col -->
-		<div class="col-lg-6 col-xs-6">
-		<!-- small box -->
-		<div class="small-box bg-green">
-		<div class="inner">
-		<h3>${jmlPangkalan}</h3>
-		<p>Jumlah Pangkalan</p>
-		</div>
-		<div class="icon">
-		<i class="fa fa-user"></i>
-		</div>
-		<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-		</div>
-		</div><!-- ./col -->
-		</c:when>   
-		
-		\end{lstlisting}
-		
-		
-			\lstset{language=Java,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-			\begin{lstlisting}[caption=Potongan kode \textit{controller} aplikasi berbasis web, label=controllerWeb]
-				@SuppressWarnings("serial")
-				@WebServlet(
-				name="Dashboard",
-				urlPatterns={"/dashboard"}, 
-				description="Halaman Dashboard (admin)"
-				)
-				public class Dashboard extends HttpServlet{
-				
-				
-				@Override
-				protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-				
-				HttpSession session = req.getSession();
-				//cek otentikasi user dengan session
-				if (session == null || session.getAttribute("userMail") == null) {
-				resp.sendRedirect(AppService.getBaseUrl(req)+"/login");
-				return;
-				}
-				
-				List<AgenJson> agenJsons;
-				List<PangkalanJson> pangkalanJsons;
-				
-				
-				if(session.getAttribute("userGroup").toString().compareTo("agen") == 0) {
-				Long idAgen =  (Long) session.getAttribute("userIdAgen");
-				
-				pangkalanJsons = new PangkalanService().getPangkalanByAgen(idAgen).getItems();
-				
-				StatistikPenjualanParam param = new StatistikPenjualanParam(idAgen);
-				StatistikJson statistikAgen =  new StatistikService().getStatistik(param);
-				
-				req.setAttribute("rataBulanan", statistikAgen.getRataPenjualanBulanIni());
-				req.setAttribute("rataTahunan", statistikAgen.getRataPenjualanTahunIni());
-				}else {
-				agenJsons = new StatistikService().getAgen().getItems();
-				pangkalanJsons = new StatistikService().getPangkalan().getItems();
-				req.setAttribute("jmlAgen",agenJsons.size());
-				}
-				
-				
-				
-				req.setAttribute("baseUrl", AppService.getBaseUrl(req));
-				req.setAttribute("pageTitle", "Dashboard");
-				req.setAttribute("webserviceUrl", AppService.getWebService());
-				req.setAttribute("content", "Home");
-				
-				req.setAttribute("jmlPangkalan", pangkalanJsons.size());
-				
-				
-				resp.setContentType("text/html");
-				RequestDispatcher jsp = req.getRequestDispatcher(KonstantaWebApp.JSP_FOLDER+"Dashboard.jsp");
-				jsp.forward(req, resp);
-				}
-				
-				
-				}
-		
-		\end{lstlisting}
 	
 		Aplikasi berbasis web ini menggunakan layanan Google Sign-in untuk melakukan proses login dengan memakai email google sebagai ID Pengenal. Untuk proses implementasinya hanya dengan menanamkan \textit{script} javascript pada halaman login seperti pada Gambar \ref{loginWeb}. Aplikasi ini juga memakai pustaka java yang bernama itext untuk melakukan ekspor data penyaluran tabung dalam bentuk \textit{file} PDF. Berikut potongan kode untuk melakukan proses ekspor pada Gambar \ref{eksporWeb}.
-	
-			\lstset{language=HTML,
-			basicstyle=\ttfamily\scriptsize\color{black},
-			keywordstyle=\color{javapurple}\bfseries,
-			stringstyle=\color{javared},
-			commentstyle=\color{javagreen},
-			morecomment=[s][\color{javadocblue}]{/**}{*/},
-			numbers=left,
-			numberstyle=\tiny\color{black},
-			showstringspaces=false,
-			numbersep=10pt,
-			tabsize=4,
-			showspaces=false,
-			showstringspaces=false,
-			autogobble=true,
-			xleftmargin=2em
-		}
-	
-		\begin{lstlisting}[caption=Potongan kode Login memakai email aplikasi berbasis web, label=loginWeb]
-			<script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
-			<script type="text/javascript">
-			var BASE_URL = '${baseUrl}';
-			$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip();
-			});
-			</script>
-		
-		\end{lstlisting}
-	
-		\lstset{language=Java,
-		basicstyle=\ttfamily\scriptsize\color{black},
-		keywordstyle=\color{javapurple}\bfseries,
-		stringstyle=\color{javared},
-		commentstyle=\color{javagreen},
-		morecomment=[s][\color{javadocblue}]{/**}{*/},
-		numbers=left,
-		numberstyle=\tiny\color{black},
-		showstringspaces=false,
-		numbersep=10pt,
-		tabsize=4,
-		showspaces=false,
-		showstringspaces=false,
-		autogobble=true,
-		xleftmargin=2em
-	}
-		\begin{lstlisting}[caption=Potongan kode ekspor data aplikasi berbasis web, label=eksporWeb]
-		protected void generatePdf(Document doc, String[] periode, EksporPelaporanJson data) 
-		throws IOException {
-		doc.add(new Paragraph("Data Laporan Penyaluran Gas 3Kg" ).setBold().setFontSize(14).setTextAlignment(TextAlignment.CENTER));
-		Table detailPangkalan = new Table(3);
-		detailPangkalan.setMarginTop(18);
-		detailPangkalan.setMarginLeft(8);
-		
-		detailPangkalan.addCell(new Cell().add(new Paragraph("Nama Pangkalan")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(":")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(data.getNamaPangkalan())).setBorder(Border.NO_BORDER));
-		
-		detailPangkalan.addCell(new Cell().add(new Paragraph("Nama Pemilik")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(":")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(data.getNamaPemilik())).setBorder(Border.NO_BORDER));
-		
-		detailPangkalan.addCell(new Cell().add(new Paragraph("Alamat")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(":")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(data.getAlamatPangkalan())).setBorder(Border.NO_BORDER));
-		
-		detailPangkalan.addCell(new Cell().add(new Paragraph("Agen Penyuplai")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(":")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(data.getNamaAgen())).setBorder(Border.NO_BORDER));
-		
-		detailPangkalan.addCell(new Cell().add(new Paragraph("Bulan")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(":")).setBorder(Border.NO_BORDER));
-		detailPangkalan.addCell(new Cell().add(new Paragraph(periode[0]+" "+periode[1])).setBorder(Border.NO_BORDER));
-		
-		doc.add(detailPangkalan);
-		doc.add(generateTable(periode, data.getPelaporan()));
-		}
-		\end{lstlisting}
 
 	\end{enumerate}
 
@@ -938,58 +267,6 @@
 	
 		\subsection{Metode \textit{Whitebox}}
 			\par Pada pengujian \textit{whitebox}, aplikasi ini menggunakan JUnit yang dapat melakukan pengujian secara otomatis. Aspek-aspek yang diuji pada pengujian ini adalah bagaimana program yang dibangun bukan hanya dapat berjalan dengan semestinya (\textit{test success}), tapi pada saat diberikan sebuah parameter yang salah program dapat mengembalikan error yang semestinya (\textit{test fail}). Aplikasi yang dibangun telah dianggap lulus pengujian apabila mampu melewati semua \textit{test} secara sempurna 100\%. 
-			
-				\lstset{language=Java,
-				basicstyle=\ttfamily\scriptsize\color{black},
-				keywordstyle=\color{javapurple}\bfseries,
-				stringstyle=\color{javared},
-				commentstyle=\color{javagreen},
-				morecomment=[s][\color{javadocblue}]{/**}{*/},
-				numbers=left,
-				numberstyle=\tiny\color{black},
-				showstringspaces=false,
-				numbersep=10pt,
-				tabsize=4,
-				showspaces=false,
-				showstringspaces=false,
-				autogobble=true,
-				xleftmargin=2em
-			}
-			
-			\begin{lstlisting}[caption=Potongan kode Pengujian JUnit dengan kasus berhasil (\textit{test success}), label=testSuccess]
-				//cek tambah penerimaan
-				@Test
-				public void baru() throws EntitasDuplikasiException,
-				TidakDitemukanException, StokTidakCukupException {
-				Agen agen = this.buatAgen();
-				Pangkalan pangkalan = this.buatPangkalan(agen);
-				
-				Penerimaan penerimaan = new PenerimaanAtur().baru(tanggalPenerimaan1, jmlTabungPenerimaan1, pangkalan.getId());
-				assertNotNull(penerimaan);
-				assertNotNull(penerimaan.getId());
-				assertNotNull(penerimaan.getKey());
-				assertNotNull(penerimaan.getTanggal());
-				assertEquals(penerimaan.getTanggal().compareTo(tanggalPenerimaan1), 0);
-				assertNotNull(penerimaan.getJmlTabung());
-				assertEquals(penerimaan.getJmlTabung().compareTo(jmlTabungPenerimaan1), 0);
-				assertNotNull(penerimaan.getPangkalan());
-				assertEquals(penerimaan.getPangkalan().compareTo(Ref.create(pangkalan)), 0);
-				assertNull(penerimaan.getLaporan());
-				assertNotNull(penerimaan.getStatusVerifikasi());
-				assertEquals(penerimaan.getStatusVerifikasi().compareTo(false), 0);
-				}
-			\end{lstlisting}
-			
-				\begin{lstlisting}[caption=Potongan kode Pengujian JUnit dengan kasus gagal (\textit{test fail}), label=testFail]
-			//cek tambah penerimaan dengan tanggal null
-			@Test(expected = NullPointerException.class)
-			public void baruTanggalNull() throws EntitasDuplikasiException, TidakDitemukanException, StokTidakCukupException {
-			Agen agen = this.buatAgen();
-			Pangkalan pangkalan = this.buatPangkalan(agen);
-			
-			new PenerimaanAtur().baru(null, jmlTabungPenerimaan1, pangkalan.getId());
-			}
-			\end{lstlisting}
 		
 			\begin{figure}[H]
 				\center
@@ -1010,6 +287,7 @@
 	
 	Pada pengujian menggunakan metode \textit{blackbox}, aspek yang diuji adalah aspek fungsionalitas dari aplikasi tanpa melihat proses logika yang terjadi dibelakang. Berikut hasil dari pengujian ini dapat dilihat pada tabel \ref{ujiWeb} untuk aplikasi berbasis \textit{web} dan tabel \ref{ujiMobile} untuk aplikasi android.
 	
+	\newpage
 	\begin{longtable}{ |c|p{3cm}|p{3cm}|p{3cm}|p{2cm}|}
 	\caption{Pengujian \textit{blackbox} pada aplikasi berbasis web}
 	\label{ujiWeb} \\ \hline
@@ -1020,7 +298,7 @@
 	& & Masukkan email google dan passwordnya           & muncul halaman beranda         & Berhasil \\ \hline
 	
 	\multirow{3}{*}{2.}  & 	\multirow{3}{*}{Tambah Pangkalan} & Klik menu pangkalan           & Tampil daftar pangkalan yang ada.             & Berhasil \\ \cline{3-5}
-	& & Klik tombol "tambah pangkalan"           & Tampil form untuk menginput data pangkalan baru.             & Berhasil \\ \hline
+	& & Klik tombol "tambah pangkalan"           & Tampil form untuk menginput data pangkalan baru.             & Berhasil \\ \cline{3-5}
 	& & Masukkan data pangkalan ke dalam form dan klik tombol "simpan"           & Muncul peringatan bahwa pangkalan telah berhasil ditambah.             & Berhasil \\ \hline
 	
 	\multirow{4}{*}{3.}  & 	\multirow{4}{*}{Edit Pangkalan} & Klik menu pangkalan           & Tampil daftar pangkalan yang ada.             & Berhasil \\ \cline{3-5}
@@ -1034,7 +312,7 @@
 	& & Klik tombol "tambah penerimaan"           & Muncul form untuk menginput data rencana pasokan.             & Berhasil \\ \cline{3-5}
 	& & Masukkan data pasokan tabung ke dalam form dan klik tombol "simpan"     & Muncul peringatan bahwa data pasokan telah berhasil ditambah.             & Berhasil \\ \hline
 	
-	\multirow{2}{*}{5.}  & 	\multirow{2}{*}{Ekspor Laporan} & Klik menu data laporan          & Tampil Form Ekspor Laporan.             & Berhasil \\ \hline
+	\multirow{2}{*}{5.}  & 	\multirow{2}{*}{Ekspor Laporan} & Klik menu data laporan          & Tampil Form Ekspor Laporan.             & Berhasil \\ \cline{3-5}
 	& & Masukkan periode laporan dan milik pangkalan mana setelah itu klik tombol "Ekspor Data"     & Muncul laporan penyaluran tabung dalam bentuk file PDF.             & Berhasil \\ \hline
 		
 	\end{longtable}
@@ -1045,24 +323,24 @@
 		\textbf{No.}                  &  \textbf{Nama Pengujian}         & \textbf{Skenario}                                       & \textbf{Luaran}              & \textbf{Hasil Pengujian} \\ \hline
 		
 		
-		\multirow{2}{*}{1.}  & 	\multirow{2}{*}{Login Akun} & Masukkan no HP akun pangkalan yang telah terdaftar           & masuk SMS kode OTP dan  Tampil halaman verifikasi OTP         & Berhasil \\ \cline{3-5}
+		\multirow{2}{*}{1.}  & 	\multirow{2}{*}{Login Akun} & Masukkan no HP akun pangkalan yang telah terdaftar           & masuk SMS kode OTP dan  Tampil halaman verifikasi OTP         & Berhasil \\ \hline
 		& & Masukkan Kode OTP dan tekan tombol "verifikasi"           & muncul halaman beranda         & Berhasil \\ \hline
 		
 		\multirow{5}{*}{2.}  & 	\multirow{5}{*}{\parbox{3cm}{\centering Register Pelanggan}} & Klik menu "register pelanggan"           & Tampil form untuk menginput data pelanggan            & Berhasil \\ \cline{3-5}
 		& & Masukkan data pelanggan ke dalam form dan klik tombol "simpan"           & Tampil halaman untuk mengupload berkas pelanggan.             & Berhasil \\ \cline{3-5}
 		& &  Tekan tombol "foto diri" untuk mengambil foto diri pelanggan        & Tombol "foto diri" akan terdapat logo centang             & Berhasil \\ \cline{3-5}
 		& &  Tekan tombol "foto KTP" untuk mengambil foto ktp pelanggan        & Tombol "foto KTP" akan terdapat logo centang             & Berhasil \\ \hline
-		& &  Tekan tombol "simpan" untuk menginput data pelanggan baru   & Muncul peringatan bahwa data pelanggan baru telah berhasil ditambah.             & Berhasil \\ \hline
+		& &  Tekan tombol "simpan" untuk menginput data pelanggan baru   & Muncul peringatan bahwa data pelanggan baru telah berhasil ditambah.             & Berhasil \\ \cline{3-5}
 		
 		\multirow{1}{*}{3.}  & 	\multirow{1}{*}{Penjualan Tabung} & Klik menu "Penjualan Tabung"          & Tampil halaman untuk mencari pelanggan.             & Berhasil \\ \cline{3-5}
 		\multirow{5}{*}{} & \multirow{5}{*}{} & Masukkan nik dari pelanggan yang membeli tabung dan tekan nama pelanggan           & Tampil data detail pelanggan.             & Berhasil \\ \cline{3-5}
 		& & Klik tombol "beli tabung"           & tampil halaman pilihan jumlah tabung & Berhasil
-		 \\ \cline{3-5}
+		 \\ \hline
 		& & tekan salah pilihan tabung           & Tampil halaman untuk mengupload bukti pembelian.             & Berhasil \\ \cline{3-5}
 		& &  Tekan tombol "foto Bukti Pembelian" untuk mengambil foto Bukti Pembelian pelanggan        & Tombol "foto Bukti Pembelian" akan terdapat logo centang             & Berhasil \\ \cline{3-5}
 		& &  Tekan tombol "simpan" untuk menginput data penjualan  & Muncul peringatan bahwa penjualan baru telah berhasil.             & Berhasil \\ \hline
 		
-		\multirow{1}{*}{4.}  & 	\multirow{1}{*}{\parbox{3cm}{\centering Riwayat Pembelian Tabung}} & Klik menu "Penjualan Tabung"          & Tampil halaman untuk mencari pelanggan.             & Berhasil \\ \hline
+		\multirow{1}{*}{4.}  & 	\multirow{1}{*}{\parbox{3cm}{\centering Riwayat Pembelian Tabung}} & Klik menu "Penjualan Tabung"          & Tampil halaman untuk mencari pelanggan.             & Berhasil \\ \cline{3-5}
 		 \multirow{3}{*}{} & \multirow{3}{*}{} & Masukkan nik dari pelanggan yang membeli tabung dan tekan nama pelanggan           & Tampil data detail pelanggan.             & Berhasil \\ \cline{3-5}
 		& & Tekan tombol "riwayat pembelian"           & tampil halaman daftar riwayat pembelian tabung & Berhasil
 		\\ \cline{3-5}
@@ -1070,7 +348,7 @@
 	
 		
 		
-		\multirow{3}{*}{5.}  & 	\multirow{3}{*}{\parbox{3cm}{\centering Verifikasi Penerimaan Pasokan Tabung}} & Klik menu "Penerimaan Tabung"           & Tampil daftar penerimaan pasokan yang ada.             & Berhasil \\ \cline{3-5}
+		\multirow{3}{*}{5.}  & 	\multirow{3}{*}{\parbox{3cm}{\centering Verifikasi Penerimaan Pasokan Tabung}} & Klik menu "Penerimaan Tabung"           & Tampil daftar penerimaan pasokan yang ada.             & Berhasil \\ \hline
 		& & geser salah salah satu daftar penerimaan dan tekan tombol centang           & Tampil peringatan konfirmasi penerimaan tabung.             & Berhasil \\ \cline{3-5}
 		& & Tekan tombol "ya"           & Muncul peringatan bahwa penerimaan tabung telah berhasil dan jumlah tabung bertambah.             & Berhasil \\ \hline
 		
@@ -1197,7 +475,7 @@ Dari hasil pengujian usability diperoleh skor yang dihitung dari nilai rata-rata
 \[persentase = \frac{nilai Total}{nilai Maximum}\times100\]
 \[persentase Aplikasi Web = \frac{78}{100}\times100=78\%\]
 \[persentase Aplikasi Android = \frac{77}{100}\times100=77\%\]
-
+\newpage
 Persentase pencapaian untuk aplikasi ini yaitu 78\% untuk aplikasi web dan 77\% untuk aplikasi android. Kemudian dilakukan komparasi nilai persentase pencapaian dengan interpretasi skor. Aplikasi-aplikasi ini berada pada rentang 61-80\% dengan interpretasi skor “Layak”. Berdasarkan hasil tersebut, dapat disimpulkan bahwa aplikasi-aplikasi ini memiliki fitur yang baik dan sesuai dengan kebutuhan setiap kelompok pengguna serta dapat digunakan untuk membantu dalam hal laporan penyaluran gas LPG 3 Kg.  
 
 Selama pengujian usability berlangsung dilakukan pula penghitungan terhadap waktu pengerjaan (\textit{time on task}) dan kesalahan pengguna dalam menyelesaikan tugas-tugas \textit{(task error)} yang diberikan. Penghitungan\textit{ \textit{time on task}} dilakukan untuk mengetahui berapa lama waktu yang dibutuhkan pengguna untuk mengerjakan tugas yang diberikan dan diukur dalam satuan detik (s). Hasil dari penghitungan \textit{time on task} untuk aplikasi untuk agen dapat dilihat pada tabel \ref{timeOnTaskAgen} dan untuk pangkalan dapat dilihat pada tabel \ref{timeOnTaskPangkalan}. 

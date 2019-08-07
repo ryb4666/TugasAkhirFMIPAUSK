@@ -2,10 +2,11 @@
 % Template Laporan Tugas Akhir 
 %
 % @author Kurnia Saputra
-% @version 1.0
+% @author Andri Darnius
+% @version 1.2
 % @since 03.02.2016
 %
-% Template ini telah disesuaikan dengan aturan penulisan tugas akhir yang terdapat pada dokumen Panduan Tugas Akhir FMIPA Unsyiah tahun 2010.
+% Template ini telah diperbaharui dan disesuaikan dengan aturan penulisan tugas akhir yang terdapat pada dokumen Panduan Tugas Akhir FMIPA Unsyiah tahun 2019.
 %
 
 \NeedsTeXFormat{LaTeX2e}
@@ -20,7 +21,7 @@
 
 \setlength{\paperwidth}{210mm}
 \setlength{\paperheight}{297mm}
-\usepackage[a4paper,left=14cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[a4paper,left=3.5cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 \usepackage{verbatim,enumerate}
 
 % Membantu penulisan notasi matematika terutama untuk dokumen dengan banyak rumus. it's me!
@@ -153,7 +154,7 @@
 \renewcommand{\section}{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {0.5ex \@plus.2ex}%
-                                   {\normalfont\normalsize\bfseries}}
+				  				   {\normalfont\normalsize\bfseries\uppercase}}
 \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {0.5ex \@plus .2ex}%
@@ -188,7 +189,7 @@
 \def\nomenclaturename{DAFTAR SINGKATAN}%
 \def\abstractname{Abstrak}%
 \def\acknowledgmentname{HALAMAN PERSEMBAHAN}%
-\def\approvalname{PENGESAHAN SIDANG SARJANA}
+\def\approvalname{PENGESAHAN}
 \def\partname{BAGIAN}%
 \def\chaptername{BAB}%
 \def\appendixname{LAMPIRAN}%
@@ -257,12 +258,16 @@
 \newcommand{\@secondsupervisor}{}
 \newcommand{\kajur}[1]{\gdef\@kajur{#1}}
 \newcommand{\@kajur}{}
+\newcommand{\dekan}[1]{\gdef\@dekan{#1}}
+\newcommand{\@dekan}{}
 \newcommand{\firstnip}[1]{\gdef\@firstnip{#1}}
 \newcommand{\@firstnip}{}
 \newcommand{\secondnip}[1]{\gdef\@secondnip{#1}}
 \newcommand{\@secondnip}{}
 \newcommand{\kajurnip}[1]{\gdef\@kajurnip{#1}}
 \newcommand{\@kajurnip}{}
+\newcommand{\dekannip}[1]{\gdef\@dekannip{#1}}
+\newcommand{\@dekannip}{}
 
 
 %------------------------------------------------------------
@@ -270,31 +275,31 @@
 %------------------------------------------------------------
 \def\cover{%
   % it's me!
-  \newgeometry{a4paper,left=4cm,right=2.7cm,top=3cm,bottom=2.5cm}  
+  \newgeometry{a4paper,left=3.5cm,right=3cm,top=3cm,bottom=3cm}  
 
   \thispagestyle{empty}%  
   \pagenumbering{roman}  
   \setcounter{page}{1}
     \begin{center}
       \begin{singlespace}
-      \fontsize{14pt}{16pt}\selectfont\MakeUppercase{\Large{\bfseries\@judul}}\par\nobreak
+      \fontsize{18pt}{20pt}\selectfont\MakeUppercase{\Large{\bfseries\@judul}}\par\nobreak
       \vspace{2.5cm}
-      \MakeUppercase{\large{\bfseries{Tugas Akhir}}}\\ %it's me!
+      \fontsize{16pt}{18pt}\MakeUppercase{\large{\bfseries{Tugas Akhir}}}\\ %it's me!
       \vspace{1.0cm}
-	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Komputer\\} %it's me!
+	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna\\ memperoleh gelar Sarjana Komputer\\} %it's me!
        \vspace{1.0cm}
        {\normalfont
         Oleh:\\
 		\vspace{1.0cm}
-        \MakeUppercase{\normalfont\bfseries\underline \@fullname}\\
-        \MakeUppercase{\normalfont\bfseries \@idnum}}\\
+        \fontsize{14pt}{16pt}\MakeUppercase{\normalfont\bfseries\underline \@fullname}\\
+       \fontsize{14pt}{16pt} \MakeUppercase{\normalfont\bfseries \@idnum}}\\
 		\vspace{2cm}
 		\vfill
 		\includegraphics[width=0.3\textwidth]{gambar/logo_unsyiah.png}
         \vfill
 		\vspace{2cm}
-       {\normalfont 
-         \MakeUppercase{\normalfont\bfseries Jurusan \@dept}\\
+       {\fontsize{14pt}{16pt}\normalfont 
+         \MakeUppercase{\normalfont\bfseries Program Studi \@program} \MakeUppercase{\normalfont\bfseries Jurusan \@dept}\\
          \MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university}\\
          \MakeUppercase{\normalfont\bfseries\@city}\\
          %\vspace{0.5cm}
@@ -307,7 +312,7 @@
 %Approval Page
 %------------------------------------------------------------
 \def\approvalpage{%
-  \chapter*{\approvalname}%
+  \chapter*{\MakeUppercase{\approvalname}}%
 \begin{center}
 	\begin{doublespace}
 		\vspace{0.5cm}
@@ -344,24 +349,31 @@
 		NIP. \@firstnip & &  NIP. \@secondnip    
 	\end{tabular}
 \end{singlespace}
-\vspace{2.0cm}
+\vspace{0.8cm}
 
 % Tanpa mengetahui dekan
 \begin{center}
 	\begin{doublespace}	
 		Mengetahui:\\
 		\begin{singlespace}
-			Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
-			\vspace{2.0cm}
-			\underline{\@kajur}\\
-			NIP. \@kajurnip 
+		%	Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
+		%	\vspace{2.0cm}
+		%	\underline{\@kajur}\\
+		%	NIP. \@kajurnip 
+			\begin{tabular}{lll}
+		Dekan Fakultas MIPA & \hspace{1cm}  & Ketua Jurusan Informatika\\ Universitas Syiah Kuala, & \hspace{1cm}  & FMIPA Universitas Syiah Kuala,\\
+		\vspace{0.5cm} & \vspace{0.5cm} & \vspace{0.5cm}\\
+		\underline{\@dekan}& &
+		\underline{\@kajur} \\
+		NIP. \@dekannip & &  NIP. \@kajurnip    
+	 \end{tabular} 
 		\end{singlespace}
 	\end{doublespace}
-\end{center}
+%\end{center}
   
-  \vspace{2.0cm}
-%  Lulus Seminar Proposal pada hari \@approvaldate
-%  \end{center}
+  \vspace{0.8cm}
+  Lulus Sidang Sarjana pada hari \@approvaldate
+  \end{center}
 \addcontentsline{toc}{chapter}{\approvalname}
 }
 
