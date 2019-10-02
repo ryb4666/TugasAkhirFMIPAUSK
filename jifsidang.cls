@@ -225,9 +225,9 @@
 %------------------------------------------------------------]
 % Define thesis's inputs
 %------------------------------------------------------------
-\gdef\@university{Universitas Syiah Kuala}
+\gdef\@university{Universitas Syiah Kuala,}
 \gdef\@faculty{Fakultas Matematika dan Ilmu Pengetahuan Alam}
-\gdef\@city{Darussalam, Banda Aceh}
+\gdef\@city{Banda Aceh}
 \newcommand{\judul}[1]{\gdef\@judul{#1}}
 \newcommand{\@judul}{}
 \newcommand{\judulinggris}[1]{\gdef\@judulinggris{#1}}
@@ -286,7 +286,7 @@
       \vspace{2.5cm}
       \fontsize{16pt}{18pt}\MakeUppercase{\large{\bfseries{Tugas Akhir}}}\\ %it's me!
       \vspace{1.0cm}
-	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna\\ memperoleh gelar Sarjana Komputer\\} %it's me!
+	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan memenuhi\\ syarat-syarat guna memperoleh gelar Sarjana Komputer\\} %it's me!
        \vspace{1.0cm}
        {\normalfont
         Oleh:\\
@@ -300,7 +300,7 @@
 		\vspace{2cm}
        {\fontsize{14pt}{16pt}\normalfont 
          \MakeUppercase{\normalfont\bfseries Program Studi \@program} \MakeUppercase{\normalfont\bfseries Jurusan \@dept}\\
-         \MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university}\\
+         \MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university}
          \MakeUppercase{\normalfont\bfseries\@city}\\
          %\vspace{0.5cm}
          \MakeUppercase{\normalfont\bfseries\@yearsubmit}}\\
@@ -327,9 +327,9 @@
 			\begin{compactitem}
 				\addtolength{\itemindent}{3cm}	
 				\setlength{\parsep}{0pt} 
-				\item[]{\makebox[2cm]{Nama\hfill} : \@fullname}
-				\item[]{\makebox[2cm]{NPM\hfill} : \@idnum}
-				\item[]{\makebox[2cm]{Jurusan\hfill} : \@dept}
+				\item[]{\makebox[2.5cm]{Nama\hfill} : \@fullname}
+				\item[]{\makebox[2.5cm]{NPM\hfill} : \@idnum}
+				\item[]{\makebox[2.5cm]{Program Studi\hfill} : \@dept}
 			\end{compactitem}
 		\end{singlespace}
 		\vspace{2.0cm}
@@ -342,10 +342,10 @@
 \end{center}
 \begin{singlespace}	
 	\begin{tabular}{lll}
-		Pembimbing I & \hspace{3cm}  & Pembimbing II \\
+		Pembimbing I & \hspace{3.1cm}  & Pembimbing II \\
 		\vspace{0.5cm} & \vspace{0.5cm} & \vspace{0.5cm}\\
-		\underline{\@firstsupervisor}& &
-		\underline{\@secondsupervisor} \\
+		\@firstsupervisor & &
+		\@secondsupervisor \\
 		NIP. \@firstnip & &  NIP. \@secondnip    
 	\end{tabular}
 \end{singlespace}
@@ -353,7 +353,6 @@
 
 % Tanpa mengetahui dekan
 \begin{center}
-	\begin{doublespace}	
 		Mengetahui:\\
 		\begin{singlespace}
 		%	Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
@@ -361,14 +360,13 @@
 		%	\underline{\@kajur}\\
 		%	NIP. \@kajurnip 
 			\begin{tabular}{lll}
-		Dekan Fakultas MIPA & \hspace{1cm}  & Ketua Jurusan Informatika\\ Universitas Syiah Kuala, & \hspace{1cm}  & FMIPA Universitas Syiah Kuala,\\
+		Dekan Fakultas MIPA & \hspace{2.5cm}  & Ketua Program Studi Informatika FMIPA\\ Universitas Syiah Kuala, & \hspace{2.5cm}  & Universitas Syiah Kuala,\\
 		\vspace{0.5cm} & \vspace{0.5cm} & \vspace{0.5cm}\\
-		\underline{\@dekan}& &
-		\underline{\@kajur} \\
+		\@dekan & &
+		\@kajur \\
 		NIP. \@dekannip & &  NIP. \@kajurnip    
 	 \end{tabular} 
 		\end{singlespace}
-	\end{doublespace}
 %\end{center}
   
   \vspace{0.8cm}
