@@ -1,0 +1,144 @@
+%-------------------------------------------------------------------------------
+%                            BAB III
+%               		METODOLOGI PENELITIAN
+%-------------------------------------------------------------------------------
+
+\chapter{METODOLOGI PENELITIAN}
+
+\section{Tempat dan Waktu Penelitian}
+\setlength\parindent{30pt} Penelitian ini dilakukan di Jurusan Informatika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Syiah Kuala Banda Aceh. Waktu yang diperlukan untuk melakukan penelitian ini kurang lebih selama lima bulan, yang dimulai dari bulan Februari 2019 sampai bulan Juli 2019.
+
+% Please remember to add \use{multirow} to your document preamble in order to suppor multirow cells
+\begin{table}[H]
+	\center
+	\caption{Jadwal Penelitian.}
+	\label{jadwal}
+	\begin{tabular}{|c|l|l|l|l|l|l|l|}
+		\hline
+		\multirow{2}{*}{No} & \multirow{2}{*}{Keterangan} 	& \multicolumn{6}{c|}{Bulan}           																										\\ \cline{3-8} 
+							&                           	& Feb				& Mar  			& Apr			& Mei			& Jun			& Jul 					\\ \hline       
+		1                   & Studi literatur           	&\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                   &                       	\\ \hline
+		2                   & Penulisan Proposal           	&                   &\cellcolor{gray}	&\cellcolor{gray}	&                   &                   &                        	\\ \hline
+		3                   & Pengembangan Aplikasi         &                   &                   & \cellcolor{gray}  & \cellcolor{gray} 	& \cellcolor{gray}  &                            \\ \hline
+		4                   & Evaluasi Sistem               &                   &                   &           		&             		&\cellcolor{gray}	&  \cellcolor{gray}    \\ \hline
+		5                   & Penulisan Laporan Akhir       &                   &                   &                   &        			&      				& \cellcolor{gray}     \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Alat dan Bahan}
+Alat yang digunakan pada penelitian ini adalah sebagai berikut :
+
+\begin{enumerate}[a.]
+\item Perangkat Keras (\textit{Hardware})
+	\begin{itemize}
+		\item 1 unit Laptop ASUS ROG Intel(R) Core(TM) i7 6700HQ
+		\item RAM 8 GB DDR3
+		\item Harddisk 1 TB
+		\item 1 unit Android Samsung S7
+	\end{itemize}
+
+\item Perangkat Lunak (\textit{Software})
+	\begin{itemize}
+		\item Visual Studio Code
+		\item Cordova 7.0.0
+		\item Ionic Framework 4
+		\item SDK Android 27.0.1
+	\end{itemize}
+\end{enumerate}
+
+\section{Metode Penelitian}
+Skema dari alur tahapan penelitian dapat dilihat pada Gambar \ref{alur}
+\vspace{-0.4cm}
+\begin{figure}[H]
+	\center
+	\includegraphics [width = 6cm, height= 10cm]{gambar/alur2}
+	\caption{Diagram Alir Penelitian}
+	\label{alur}
+\end{figure}
+
+\subsection{Analisis Permasalahan}
+Aplikasi ini merupakan aplikasi berbasis mobile yang berguna untuk membantu pangkalan gas LPG Subsidi 3 Kg dalam melakukan pelaporan penyaluran tabung gas subsidi. Aplikasi ini juga membantu agen gas LPG selaku distributor dan pengawasan dari pangkalan gas untuk melakukan rekap laporan penyaluran tabung gas 3 Kg. Aplikasi ini melakukan pelaporan penyaluran tabung gas subsidi dengan menggunakan NIK(Nomor Induk Kependudukan) dan no telepon sebagai data acuan yang valid. Setelah itu data tersebut langsung di kirim langsung ke agen gas LPG bersangkutan. Adapun fitur-fitur yang terdapat pada aplikasi ini adalah sebagai berikut
+\begin{itemize}
+		\itemsep0em
+		\item Masuk ke dalam aplikasi.
+		\item Mencatat penjualan tabung gas menggunakan NIK sebagai acuan.
+		\item Melihat histori pembelian gas konsumen.
+		\item Melihat foto konsumen yang membeli gas
+		\item Mengubah profile biodata user.
+\end{itemize}
+
+\subsection{Studi Literatur}
+Studi literatur dilakukan dengan mencari jurnal baik nasional maupun internasional, buku, serta beberapa literatur elektronik yang diunduh dari internet yang terkait dengan penelitian ini. Studi literatur juga diperoleh dengan meneliti aplikasi atau perangkat lunak yang berkaitan dengan penelitian. Studi literatur digunakan sebagai bahan referensi selama proses penelitian.
+
+\subsection{Pengumpulan Data}
+Data yang digunakan dalam penelitian ini adalah data penyaluran tabung ke masyarakat dan format pelaporan yang dipakai oleh pangkalan. Data tersebut didapatkan dari agen dan pangkalan yang menjadi objek penelitian. Pada tahap pengembangan ini, akan menghasilkan luaran-luaran seperti :
+	\begin{itemize}
+		\item Menjelaskan lebih detail mengenai bagaimana alur penyaluran gas LPG 3 Kg dari agen gas LPG sampai ke konsumen.
+		\item Menjelaskan secara detail bagaimana format pelaporan yang dipakai agen gas untuk memantau penyaluran gas LPG 3 Kg.
+	\end{itemize}
+
+\subsection{Perancangan dan Pembuatan Sistem}
+Dalam merancang aplikasi ini, digunakan metode pengembangan perangkat lunak yaitu Scrum. Metode Scrum sangat fleksibel terhadap perubahan-perubahan sehingga cocok digunakan pada aplikasi ini. Berikut merupakan tahapan perancangan sistem yang akan dilakukan:
+
+\begin{enumerate}[1.]
+	\item \emph {Planning}
+	
+	Pada tahap ini dilakukan analisa terhadap masalah yang terjadi di lapangan dalam penelitian ini yaitu pangkalan gas LPG 3 Kg dan mencari solusi yang akan memecahkan masalah tersebut dengan mengembangkan suatu sistem. Setelah itu dilakukan tahap inisiasi awal pengembangan sistem yaitu melakukan analisis kebutuhan pada setiap pengguna sistem yaitu Agen dan Pangkalan Gas LPG yang dilanjutkan dengan membuat \textit{storyboard} yaitu gambaran yang menceritakan jalannya sistem yang dibuat secara singkat. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dari aplikasi telah didapatkan.
+	
+	
+
+	\item \textit{Design}
+	
+	\par Tahap ini fokus pada desain pembuatan perangkat lunak termasuk struktur data, arsitektur perangkat lunak, representasi antarmuka dan prosedur pengkodean. Proses tahap ini dilakukan dengan terlebih dahulu mengidentifikasi persona, \textit{value proposition canvas} (vpc), membuat use case diagram untuk setiap aktor dan storyboard dan juga membuat \textit{deployment diagram} seperti pada gambar \ref{deployment}. Proses tersebut dilakukan untuk memastikan setiap desain dan cara kerja aplikasi yang dibangun dapat digunakan oleh masing-masing kelompok pengguna.
+	\par Perancangan sistem terbagi 2 yaitu aplikasi \textit{mobile web} yang akan digunakan oleh Pangkalan Gas LPG untuk melakukan pencatatan penyaluran tabung gas dan \textit{web admin} yang akan digunakan oleh Agen Gas LPG untuk melakukan rekapitulasi data penyaluran. Tahap ini dianggap telah selesai apabila telah menghasilkan sebuah desain rancangan aplikasi dalam bentuk use-case diagram dan deployment diagram, dan model diagram lainnya.
+	
+
+	
+	\item \textit{Coding}
+	
+	Pada tahapan ini, dilakukan implementasi terhadap desain yang telah dibuat sebelumnya ke dalam bentuk program. Penulisan kode program dalam penelitian ini menggunakan Ionic Framework yang ditulis dalam bahasa pemrograman Typescript untuk aplikasi berbasis Android dan untuk web service yang akan digunakan oleh aplikasi untuk berkomunikasi dengan database akan menggunakan Google App Engine yang ditulis dalam bahasa pemrograman Java. Tahap ini dianggap telah selesai apabila semua kebutuhan fungsional dan non-fungsional telah diselesaikan.
+
+	 \item \textit{Testing}
+	
+	Tahapan \textit{testing} yang dilakukan diantaranya adalah sebagai berikut:
+	\begin{enumerate}[a.]
+			\itemsep0em
+			\item \textit{Usability}
+			\newline Pengujian \textit{usability} digunakan untuk mengetahui seberapa mudah aplikasi dapat dijalankan oleh pengguna. Teknik pengujian \textit{usability} yang digunakan adalah dengan memberikan kuesioner kepada setiap kelompok user yaitu agen gas LPG dan pangkalan gas LPG. Jenis pertanyaan yang ada pada kuesioner mengacu pada kuesioner SUS (\textit{System Usability Scale}). Dalam pengujian \textit{usability} ini, melibatkan sekitar 8 pengguna yang berbeda. SUS terdiri dari 10
+			pertanyaan dengan menggunakan skala dari 1 sampai 5. Skor akhir dari pengujian. SUS akan berada pada kisaran 0-100 \%. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan akseptabilitas desain sistem aplikasi yang dikembangkan. Berdasarkan skor akhir SUS tersebut dapat diketahui seberapa tinggi tingkat usability dan interpretasi desain sistem aplikasi yang dikembangkan. Berikut
+			nilai interpretasi yang digunakan :
+			
+								\begin{table}[H]
+								\center
+								\caption{Skor Interpretasi.}
+								\label{nilaiInterpretasi}
+								\begin{tabular}{|l|l|}
+									\cline{1-2}
+									\multicolumn{2}{|c|}{\textbf{Interpretasi Skor}}                                                        \\ \cline{1-2}
+									\multirow{2}{*}{\textbf{Persentase Pencapaian \%}} & \multirow{2}{*}{\textbf{Interpretasi}}          \\
+									&                                               \\ \hline
+									0-20                                                    &  Sangat tidak layak                           \\ \hline
+									21-40                                                   &  Tidak layak                                  \\ \hline                                          
+									41-60                                                   &  Cukup layak                                  \\ \hline                                          
+									61-80                                                   &  Layak                                  \\ \hline                                          
+									81-100                                                  &  Sangat layak                                  \\ \hline                                          
+								\end{tabular}
+							\end{table}
+			
+			\item \textit{Unit Testing}
+			\newline Unit testing fokus pada verifikasi pada unit yang terkecil pada desain perangkat lunak (komponen atau modul perangkat lunak). Karena dalam sebuah perangkat lunak banyak memiliki unit-unit kecil maka untuk mengujinya biasanya dibuat program kecil atau main program) untuk menguji unit-unit perangkat lunak.
+		
+	\end{enumerate}
+	
+	\par Tahap ini dapat dilakukan setelah ataupun berdampingan dengan tahap \textit{coding}. Tahap ini dianggap telah selesai apabila semua pengujian yang telah dikerjakan menghasilkan nilai dengan skala tertentu
+	
+	
+\end{enumerate}
+
+
+% Baris ini digunakan untuk membantu dalam melakukan sitasi
+% Karena diapit dengan comment, maka baris ini akan diabaikan
+% oleh compiler LaTeX.
+\begin{comment}
+\bibliography{daftar-pustaka}
+\end{comment}
